@@ -1,11 +1,11 @@
 
-#navContainer{
+#nav-menu{
     border-bottom: 1px solid rgba(255, 255, 255, 0.651);
     margin-bottom: 4rem;
   background-color: #1b2641;
 
 }
-#navContainer a{   
+#nav-menu a{   
      /* background-color: #0f172a; */
      color: #e2e8f0;
      

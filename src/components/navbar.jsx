@@ -1,8 +1,8 @@
 import "../styles/navbar.css";
 export default function Navbar() {
   return (
-    <nav id="nav-menu" className="navbar navbar-expand-lg navSec">
-      <div className="container-fluid fixed-top  " id="navContainer">
+    <nav  className="navbar navbar-expand-lg navSec">
+      <div id="nav-menu" className="container-fluid fixed-top  " >
         <a className="navbar-brand" href="#">
           Navbar
         </a>
