@@ -1,0 +1,52 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.card {
+  width: 240px;
+  padding: 10px;
+  height: 210px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(80, 202, 246, 0.84) 0px 2px 6px;
+}
+.icon {
+  background-color: #1a1a1a;
+  color: #4dbdfa;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  border-radius: 50%;
+}
+.desc{
+    color: #fff;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.desc h5{
+    
+}
+.desc p{
+    
+}

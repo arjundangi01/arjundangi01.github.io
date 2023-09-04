@@ -22,22 +22,22 @@ export default function Navbar() {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav ">
-            <a className="nav-link home active me-5 " aria-current="page" href="#">
+            <a className="nav-link home active me-5 " aria-current="page" href="#home">
               HOME
             </a>
-            <a className="nav-link about active me-5 " aria-current="page" href="#">
+            <a className="nav-link about active me-5 " aria-current="page" href="#about">
               ABOUT
             </a>
-            <a className="nav-link skills active me-5 " aria-current="page" href="#">
+            <a className="nav-link skills active me-5 " aria-current="page" href="#skills">
               SKILLS
             </a>
-            <a className="nav-link projects active me-5" aria-current="page" href="#">
+            <a className="nav-link projects active me-5" aria-current="page" href="#projects">
               PROJECTS
             </a>
-            <a className="nav-link active me-5" aria-current="page" href="#">
+            <a className="nav-link active me-5" aria-current="page" href="#github">
               GITHUB
             </a>
-            <a className="nav-link contact active me-5" aria-current="page" href="#">
+            <a className="nav-link contact active me-5" aria-current="page" href="#contact">
               CONTACT
             </a>
             <a className="nav-link resume active me-5" aria-current="page" href="#">

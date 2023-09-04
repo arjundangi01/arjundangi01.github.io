@@ -1,0 +1,19 @@
+.github{
+   margin: 10rem 0rem;
+    padding: 1rem;
+   display: flex;
+   justify-content: center;
+   /* border: 1px solid #dc1010; */
+}
+.container{
+    /* width: 50%; */
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.top{
+    display: flex;
+    gap: 1rem;
+}
