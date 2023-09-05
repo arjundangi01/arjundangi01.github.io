@@ -41,6 +41,15 @@ const About = () => {
               </tr>
             </tbody>
           </table>
+        
+          <a
+            className="nav-link resume active me-5"
+            aria-current="page"
+            target="_blank"
+            href="https://drive.google.com/u/0/uc?id=1ac9QC_NaLOMpNl9UpMvkjwPP7uW9c5ps&export=download"
+          >
+            <button id="resume-button-2" >RESUME</button>
+          </a>
         </div>
       </div>
     </div>
