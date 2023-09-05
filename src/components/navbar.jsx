@@ -1,8 +1,8 @@
 import "../styles/navbar.css";
 export default function Navbar() {
   return (
-    <nav  className="navbar navbar-expand-lg navSec">
-      <div id="nav-menu" className="container-fluid fixed-top  " >
+    <nav className="navbar navbar-expand-lg navSec">
+      <div id="nav-menu" className="container-fluid fixed-top  ">
         <a className="navbar-brand" href="#">
           Navbar
         </a>
@@ -22,25 +22,53 @@ export default function Navbar() {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav ">
-            <a className="nav-link home active me-5 " aria-current="page" href="#home">
+            <a
+              className="nav-link home active me-5 "
+              aria-current="page"
+              href="#home"
+            >
               HOME
             </a>
-            <a className="nav-link about active me-5 " aria-current="page" href="#about">
+            <a
+              className="nav-link about active me-5 "
+              aria-current="page"
+              href="#about"
+            >
               ABOUT
             </a>
-            <a className="nav-link skills active me-5 " aria-current="page" href="#skills">
+            <a
+              className="nav-link skills active me-5 "
+              aria-current="page"
+              href="#skills"
+            >
               SKILLS
             </a>
-            <a className="nav-link projects active me-5" aria-current="page" href="#projects">
+            <a
+              className="nav-link projects active me-5"
+              aria-current="page"
+              href="#projects"
+            >
               PROJECTS
             </a>
-            <a className="nav-link active me-5" aria-current="page" href="#github">
+            <a
+              className="nav-link active me-5"
+              aria-current="page"
+              href="#github"
+            >
               GITHUB
             </a>
-            <a className="nav-link contact active me-5" aria-current="page" href="#contact">
+            <a
+              className="nav-link contact active me-5"
+              aria-current="page"
+              href="#contact"
+            >
               CONTACT
             </a>
-            <a className="nav-link resume active me-5" aria-current="page" href="#">
+            <a
+              className="nav-link resume active me-5"
+              aria-current="page"
+              href="https://drive.google.com/u/0/uc?id=1ac9QC_NaLOMpNl9UpMvkjwPP7uW9c5ps&export=download"
+            >
               <button>RESUME</button>
             </a>
           </div>

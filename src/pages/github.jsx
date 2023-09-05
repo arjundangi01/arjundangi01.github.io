@@ -9,10 +9,10 @@ const Github = () => {
         </div>
         <div className={  `${style.top}`} >
           <div   >
-            <img id="github-top-langs" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arjundangi01&theme=2077" alt="" />
+            <img  id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arjundangi01&layout=donut" alt="" />
           </div>
           <div>
-            <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arjundangi01&theme=2077" alt="" />
+            <img  height="214" src="https://github-readme-stats.vercel.app/api?username=arjundangi01&show_icons=true" alt="" />
           </div>
         </div>
         <div  >
