@@ -22,8 +22,8 @@ const Home = () => {
               }}
             />
           </h2> */}
-          <h1 id="user-detail-name">I am <span className="h-text" >Arjun Dangi</span> </h1>
-          <h1>Aspiring Full Stack </h1>
+          <h1  id="user-detail-name">I am <span className="h-text" >Arjun Dangi</span> </h1>
+          <h1 id="user-detail-intro" >Aspiring Full Stack </h1>
           <h1 className="h-text">Developer</h1>
         </div>
         <div className="right-div">

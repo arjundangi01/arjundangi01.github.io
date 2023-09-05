@@ -7,7 +7,7 @@ const About = () => {
         <div className={`${style.leftDiv}`}>
           <h1>hii</h1>
         </div>
-        <div id="user-detail-intro" className={`${style.rightDdiv}`}>
+        <div  className={`${style.rightDdiv}`}>
           <p>
             An enthusiastic Full Stack Web Developer with a strong set of
             technical as well as non-technical skills and a dedication towards

@@ -1,14 +1,16 @@
 .contact {
   display: flex;
   justify-content: center;
-  color: white;
+  color: rgb(0, 0, 0);
+  background: rgb(205,125,205);
+  background: radial-gradient(circle, rgba(205, 125, 205, 0.209) 0%, rgba(75, 133, 177, 0.074) 89%, rgba(148, 188, 200, 0.249) 100%);
 }
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .container {
-  color: white;
+  color: rgb(15, 14, 14);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -37,7 +39,7 @@ a {
   border-radius: 50%;
 }
 .desc{
-    color: #fff;
+    color: #111010;
     /* border: 1px solid #000; */
     display: flex;
     align-items: center;
