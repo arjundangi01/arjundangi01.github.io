@@ -1,5 +1,14 @@
 import React from "react";
 import style from "../styles/about.module.css";
+import { motion, Variants } from "framer-motion";
+const textAnimate = {
+  offscreen: { x: 100 },
+  onscreen: {
+    x: 10,
+    transition: { duration: 2 },
+  },
+};
+
 const About = () => {
   return (
     <div id="about" className={`about section ${style.about2}`}>
@@ -7,12 +16,16 @@ const About = () => {
         <div className={`${style.leftDiv}`}>
           <h1>hii</h1>
         </div>
-        <div  className={`${style.rightDdiv}`}>
-          <p>
+        <motion.div className={`${style.rightDdiv}`}  initial={"offscreen"}
+          animate={"onscreen"}
+          variants={textAnimate} >
+        <div >
+         
+          {/* <p>
             An enthusiastic Full Stack Web Developer with a strong set of
             technical as well as non-technical skills and a dedication towards
             creating useful and interactive web applications using MERN stack.
-          </p>
+          </p> */}
           <table>
             <tbody>
               <tr>
@@ -49,8 +62,10 @@ const About = () => {
             href="https://drive.google.com/u/0/uc?id=1ac9QC_NaLOMpNl9UpMvkjwPP7uW9c5ps&export=download"
           >
             <button id="resume-button-2" >RESUME</button>
-          </a>
-        </div>
+            </a>
+           
+          </div>
+          </motion.div>
       </div>
     </div>
   );
