@@ -19,8 +19,9 @@
   /* border: 1px solid white; */
   margin: auto;
   z-index: 500;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 90%;
   margin: auto;
   gap: 2.5rem 1.7rem;
@@ -51,6 +52,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+  width: 240px;
   text-align: center;
   transform: translateY(30px);
   opacity: 1;
