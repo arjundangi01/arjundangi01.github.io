@@ -2,8 +2,16 @@
   display: flex;
   justify-content: center;
   color: rgb(0, 0, 0);
-  background: rgb(205,125,205);
-  background: radial-gradient(circle, rgba(205, 125, 205, 0.209) 0%, rgba(75, 133, 177, 0.074) 89%, rgba(148, 188, 200, 0.249) 100%);
+  /* border: 1px solid #000; */
+  
+  /* background: rgb(205, 125, 205);
+  background: radial-gradient(
+    circle,
+    rgba(205, 125, 205, 0.209) 0%,
+    rgba(75, 133, 177, 0.074) 89%,
+    rgba(148, 188, 200, 0.249) 100%
+  ); */
+  padding: 10rem;
 }
 a {
   text-decoration: none;
@@ -17,15 +25,27 @@ a {
   gap: 25px;
 }
 .card {
-  width: 240px;
+  /* width: 240px; */
   padding: 10px;
-  height: 210px;
-  border-radius: 10px;
+  height: 260px;
+  /* border-radius: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: rgba(80, 202, 246, 0.84) 0px 2px 6px;
+  /* box-shadow: rgba(80, 202, 246, 0.84) 0px 2px 6px; */
+
+  /*  */
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 .icon {
   background-color: #1a1a1a;
@@ -38,17 +58,49 @@ a {
   font-size: 38px;
   border-radius: 50%;
 }
-.desc{
-    color: #111010;
-    /* border: 1px solid #000; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.desc {
+  color: #111010;
+  /* border: 1px solid #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.desc h5{
-    
+.desc h5 {
 }
-.desc p{
-    
+.desc p {
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover::before {
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+.card:hover .icon {
+  color: #212121;
+  background: #e8e8e8;
+}
+
+.card .icon:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
+}
+
+.card .icon:active {
+  box-shadow: none;
 }

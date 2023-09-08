@@ -5,13 +5,7 @@
   padding: 5rem;
   margin-bottom: 10px;
   border: border-box;
-  background: rgb(205, 125, 205);
-  background: radial-gradient(
-    circle,
-    rgba(205, 125, 205, 0.209) 0%,
-    rgba(75, 133, 177, 0.074) 89%,
-    rgba(148, 188, 200, 0.249) 100%
-  );
+  
 }
 .container {
   width: 90%;
@@ -21,31 +15,132 @@
 }
 .project {
   /* display: flex; */
-  width: clamp(90%,100%,110%);
+  width: 80%;
   margin: auto;
 }
-/* .project:hover h1 {
-  color: rgb(221, 125, 22);
+.dot{
+   background-color: #000;
+   height: 20px;
+   width: 20px;
+   border-radius: 50%;
 }
-.project:hover .techDiv {
-  color: rgb(221, 125, 22);
-} */
 
-/* -------------left start--------- */
+/* -------------top start--------- */
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  /* border: 1px solid #000; */
+  
+}
+.contentLeft{
+  /* border: 1px solid #000; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.btnDiv{
+  display: flex;
+  gap: 2rem;
+  /* border: 1px solid #000; */
+}
+
+.contentRight{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+
+  /* border: 1px solid #000; */
+
+}
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #23aad7;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+}
+.button:hover::before {
+  transform: scaleX(1);
+}
+.buttonContent {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+/* -------------top end--------- */
+
+/* -------------bottom start--------- */
+.right1 {
+  /* width: 45%;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  margin: auto;
+  align-items: end;
+  padding: 10px;
+  justify-content: space-evenly; */
+}
+
+.outer1 {
+}
+.inner1 {
+  /* padding: 1.2rem 2rem; */
+
+  height: 120px;
+  overflow-y: scroll;
+  /* display: flex;
+  justify-content: end;*/
+  text-align: justify; 
+}
+.description1 {
+}
+.techDiv {
+  display: flex;
+  gap: 1rem;
+}
+
+/* -------------bottom start--------- */
+
 .imgDiv {
   width: 100%;
   display: flex;
-  align-items: flex-end;
 }
 .deskImgDiv {
   border: 4px solid #000;
   border-radius: 15px;
   /* height: 600px; */
   width: 80%;
-  width: clamp(90%,100%,110%);
+ 
 
   overflow: hidden;
- 
 }
 .deskImgDiv img {
   width: 100%;
@@ -58,68 +153,16 @@
   border: 4px solid #000;
   border-radius: 25px;
   margin-left: -5rem;
-  width: clamp(20%,30%,40%);
-
- 
+  width: 20%;
+  /* height: 30rem; */
+  margin-bottom: -1rem;
   overflow: hidden;
+  align-self: flex-end;
 }
 .phoneImgDiv img {
-
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-/* -------------left end--------- */
-
-/* -------------right start--------- */
-.right1 {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  height: 400px;
-  /* border: 1px solid #000; */
-  margin: auto;
-  align-items: end;
-  padding: 10px;
-  justify-content: space-evenly;
-}
-
-.outer1 {
-}
-.inner1 {
-  /* background-color: rgb(185, 188, 191); */
-  /* background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,0.6942738765428047) 0%, rgba(148,187,233,0.6718649129573704) 100%); */
-  /* background: rgb(205, 125, 205);
-  background: radial-gradient(
-    circle,
-    rgba(205, 125, 205, 0.47298536113664214) 0%,
-    rgba(75, 133, 177, 0.3273270978313201) 89%,
-    rgba(181, 168, 182, 0.8707444647780987) 100%
-  ); */
-  background: rgba(205, 125, 205, 0.535);
-  background: radial-gradient(
-    circle,
-    rgba(125, 205, 178, 0.203) 0%,
-    rgba(177, 89, 75, 0.17) 89%,
-    rgba(200, 148, 161, 0.315) 100%
-  );
-  margin: 1rem 0rem;
-  margin-left: -6rem;
-  padding: 1.2rem 2rem;
-
-  height: 160px;
-  overflow-y: scroll;
-  display: flex;
-  justify-content: end;
-  text-align: justify;
-}
-.description1 {
-}
-.techDiv {
-  display: flex;
-  gap: 1rem;
-}
-
-/* -------------right end--------- */
+/* -------------bottom end--------- */

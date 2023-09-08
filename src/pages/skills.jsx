@@ -9,10 +9,26 @@ import routerImg from "./Images/router3.png";
 import reduxImg from "./Images/redux.png";
 import nodeJSImg from "./Images/nodejs.png";
 import mongoJSImg from "./Images/mongo.png";
+import { motion, Variants } from "framer-motion";
+
 
 const Skills = () => {
+  const containerAnimate = {
+    offscreen: { y: 0,opacity:0 },
+    onscreen: {
+      y: -80,
+      opacity: 1,
+    
+      transition: { duration: 3,bounce:0.7,type:"spring" },
+    },
+  };
   return (
     <div id="skills" className={`${style.skillsContainer}`}>
+      <motion.div
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          variants={containerAnimate}
+        >
       <div className={`${style.container}`}>
         <Skill img={htmlImg}name={"HTML"} />
         <Skill img={cssImg} name={"CSS"}/>
@@ -26,7 +42,8 @@ const Skills = () => {
         <Skill img={htmlImg}name={"HTML"} />
         <Skill img={htmlImg}name={"HTML"} />
         <Skill img={htmlImg} name={"HTML"} />
-      </div>
+        </div>
+        </motion.div>
     </div>
   );
 };

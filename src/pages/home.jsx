@@ -5,9 +5,10 @@ import Typewriter from "typewriter-effect";
 import { motion, Variants } from "framer-motion";
 const Home = () => {
   const textAnimate = {
-    offscreen: { x: -100 },
+    offscreen: { x: -100,opacity:0 },
     onscreen: {
       x: 0,
+      opacity:1,
       transition: { duration: 2 },
     },
   };

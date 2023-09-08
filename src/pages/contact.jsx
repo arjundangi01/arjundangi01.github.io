@@ -8,11 +8,10 @@ const Contact = () => {
   return (
     <div id="contact" className={`${style.contact}`}>
       <div className={`${style.container}`}>
-        <a href="https://github.com/arjundangi01" target="blank" >
+        <a href="https://github.com/arjundangi01" target="blank">
           <div id="contact-github" className={`${style.card}`}>
             <div className={`${style.icon}`}>
               <AiFillGithub />
-
             </div>
             <div className={`${style.desc}`}>
               <h5>Github</h5>
@@ -25,7 +24,6 @@ const Contact = () => {
           <div id="contact-linkedin" className={`${style.card}`}>
             <div className={`${style.icon}`}>
               <AiFillLinkedin />
-
             </div>
             <div className={`${style.desc}`}>
               <h5>Linkedin</h5>
@@ -47,7 +45,7 @@ const Contact = () => {
         </a>
         {/*  */}
         <a href="">
-          <div  id="contact-phone" className={`${style.card}`}>
+          <div id="contact-phone" className={`${style.card}`}>
             <div className={`${style.icon}`}>
               <AiOutlinePhone />
             </div>
