@@ -14,7 +14,7 @@ const About = () => {
     <div id="about" className={`about section ${style.about2}`}>
       <div className={`${style.container}`}>
         <div className={`${style.leftDiv}`}>
-          <h1>hii</h1>
+          {/* <img src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="" /> */}
         </div>
         <motion.div className={`${style.rightDdiv}`}  initial={"offscreen"}
           animate={"onscreen"}

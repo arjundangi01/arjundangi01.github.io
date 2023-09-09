@@ -19,7 +19,7 @@ const Skills = () => {
       y: -80,
       opacity: 1,
     
-      transition: { duration: 3,bounce:0.7,type:"spring" },
+      transition: { duration: 0.8 },
     },
   };
   return (

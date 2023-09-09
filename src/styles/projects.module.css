@@ -7,6 +7,7 @@
   border: border-box;
   
 }
+
 .container {
   width: 90%;
   margin: auto;
@@ -61,13 +62,13 @@
 .button {
   position: relative;
   overflow: hidden;
-  height: 3rem;
-  padding: 0 2rem;
+  height: 2.5rem;
+  padding: 0 1.5rem;
   border-radius: 1.5rem;
-  background: #23aad7;
+  background: #ffffff;
   background-size: 400%;
-  color: #fff;
-  border: none;
+  color: #0e0e0e;
+ border: 1px solid #000;
 }
 .button:hover::before {
   transform: scaleX(1);
@@ -94,6 +95,22 @@
   );
   transition: all 0.475s;
 }
+.inner1 {
+  padding: 0rem 1rem;
+
+  height: 120px;
+  overflow-y: scroll;
+  text-align: justify; 
+}
+
+.inner1::-webkit-scrollbar {
+  width: 3px;
+  
+}
+.inner1::-webkit-scrollbar-thumb {
+  background: rgb(13, 165, 230);
+  border-radius: 20px;
+}
 
 /* -------------top end--------- */
 
@@ -111,15 +128,7 @@
 
 .outer1 {
 }
-.inner1 {
-  /* padding: 1.2rem 2rem; */
 
-  height: 120px;
-  overflow-y: scroll;
-  /* display: flex;
-  justify-content: end;*/
-  text-align: justify; 
-}
 .description1 {
 }
 .techDiv {
@@ -166,3 +175,65 @@
   border-radius: 10px;
 }
 /* -------------bottom end--------- */
+
+
+@media only screen and (min-width: 900px) and (max-width: 1250px) {
+  .container {
+    width: 100%;
+  }
+  .project {
+    /* display: flex; */
+    width: 90%;
+   
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+  .project {
+    /* display: flex; */
+    width: 100%;
+   
+  }
+  .projects {
+    padding: 1rem;
+   
+  }
+  .content{
+    flex-direction: column;
+    /* border: 1px solid #000;
+     */
+  }
+  .contentRight{
+    width: 90%;
+  }
+}
+@media only screen  and (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+
+  .project {
+    /* display: flex; */
+    width: 100%;
+   
+  }
+  .projects {
+    padding: 1rem;
+   
+  }
+  .content{
+    flex-direction: column;
+    /* border: 1px solid #000;
+     */
+  }
+  .contentRight{
+    width: 90%;
+  }
+  .techDiv{
+    justify-content: center;
+    /* border: 1px solid #000; */
+  }
+}
+

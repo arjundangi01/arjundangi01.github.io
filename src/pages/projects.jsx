@@ -2,6 +2,7 @@ import React from "react";
 import Project from "../components/project";
 import style from "../styles/projects.module.css";
 import glossierImg from "../pages/Images/gloosier.png";
+import gssImg from "./Images/gss.png"
 const Projects = () => {
   return (
     <div id="projects" className={`  ${style.projects}`}>
@@ -45,7 +46,7 @@ const Projects = () => {
               <img src={glossierImg} alt="" />
             </div>
             <div className={`${style.phoneImgDiv}`}>
-              <img src={glossierImg} alt="" />
+              <img src={gssImg} alt="" />
             </div>
           </div>
         </div>

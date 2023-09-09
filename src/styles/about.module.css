@@ -64,3 +64,26 @@ tbody td {
 }
 
 /* -------------right end------------------------- */
+
+
+@media only screen and (min-width: 900px) and (max-width: 1250px) {
+  .container {
+    flex-direction: column;
+
+  }
+ 
+}
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+}

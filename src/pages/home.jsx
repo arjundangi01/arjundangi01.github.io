@@ -3,12 +3,17 @@ import "../styles/home.css";
 import arjunImg from "./Images/avatar.jpg";
 import Typewriter from "typewriter-effect";
 import { motion, Variants } from "framer-motion";
+import Button from "../components/button/button";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlinePhone } from "react-icons/ai";
 const Home = () => {
   const textAnimate = {
-    offscreen: { x: -100,opacity:0 },
+    offscreen: { x: -100, opacity: 0 },
     onscreen: {
       x: 0,
-      opacity:1,
+      opacity: 1,
       transition: { duration: 2 },
     },
   };
@@ -36,13 +41,17 @@ const Home = () => {
                 }}
               />
             </h2>
-           
-              <h1 id="user-detail-name">
-                I am <span className="h-text">Arjun Dangi</span>{" "}
-              </h1>
-              <h1 id="user-detail-intro">Aspiring Full Stack </h1>
-              <h1 className="h-text">Developer</h1>
-          
+
+            <h1 id="user-detail-name">
+              I am <span className="h-text">Arjun Dangi</span>{" "}
+            </h1>
+            <h1 id="user-detail-intro">Aspiring Full Stack </h1>
+            <h1 className="h-text">Developer</h1>
+            <div>
+              <Button text={<AiFillGithub />} />
+              <Button text={<AiFillLinkedin />} />
+              <Button text={<AiOutlineMail />} />
+            </div>
           </div>
         </motion.div>
         <div className="right-div">

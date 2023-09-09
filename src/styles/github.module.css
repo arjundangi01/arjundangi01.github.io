@@ -13,7 +13,16 @@
     gap: 2rem;
     align-items: center;
 }
+.container img{
+    width: 100%;
+}
 .top{
     display: flex;
     gap: 1rem;
 }
+@media only screen and (max-width: 900px) {
+    .top{
+       flex-direction: column;
+    }
+    
+  }
