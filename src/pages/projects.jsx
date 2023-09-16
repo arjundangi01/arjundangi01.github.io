@@ -2,7 +2,7 @@ import React from "react";
 import Project from "../components/project";
 import style from "../styles/projects.module.css";
 import glossierImg from "../pages/Images/gloosier.png";
-import gssImg from "./Images/gss.png";
+import gssImg from "./Images/gloosier s.png";
 const Projects = () => {
   return (
     <div id="projects" className={`  ${style.projects}`}>
