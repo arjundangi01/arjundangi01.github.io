@@ -2,7 +2,7 @@ import React from "react";
 import Project from "../components/project";
 import style from "../styles/projects.module.css";
 import glossierImg from "../pages/Images/gloosier.png";
-import gssImg from "./Images/gss.png"
+import gssImg from "./Images/gss.png";
 const Projects = () => {
   return (
     <div id="projects" className={`  ${style.projects}`}>
@@ -10,29 +10,37 @@ const Projects = () => {
         <div className={`project-card ${style.project}`}>
           <div className={`${style.content}`}>
             <div className={`${style.contentLeft}`}>
-              <div>               
-                
-                  <h1 className={`project-title`}>   Myntra Clone</h1>
-                  <h3>An E-Commerce Website</h3>
+              <div>
+                <h1 className={`project-title`}> Myntra Clone</h1>
+                <h3 className={`${style.subTitle}`}>An E-Commerce Website</h3>
               </div>
-              <div className={style.btnDiv} >
-                <button className={`project-github-link ${style.button}`}><span className={style.buttonContent}>Github </span></button>
-                <button className={`project-deployed-link ${style.button}`}><span className={style.buttonContent}>Preview </span></button>
+              <div className={style.btnDiv}>
+                <button className={`project-github-link ${style.button}`}>
+                  <span className={style.buttonContent}>Github </span>
+                </button>
+                <button className={`project-deployed-link ${style.button}`}>
+                  <span className={style.buttonContent}>Preview </span>
+                </button>
               </div>
             </div>
             <div className={`${style.contentRight}`}>
               <div className={`${style.inner1}`}>
-                <p className={` project-description ${style.description1}`}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                  illum repellat delectus obcaecati! Quibusdam error dignissimos
-                  alias beatae, aliquid voluptatibus accusantium! Nulla
-                  asperiores iure nemo error. Et assumenda repellendus dicta.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                  illum repellat delectus obcaecati! Quibusdam error dignissimos
-                  alias beatae, aliquid voluptatibus accusantium! Nulla
-                  asperiores iure nemo error. Et assumenda repellendus dicta.
-                </p>
+                <div className={` project-description ${style.description1}`}>
+                  <p>                   
+                    Build clone of myntra.com in 7 days along with a team of 5
+                    members.
+                  </p>  
+                  <p>Features :</p>
+                  <li>Login</li>
+                  <li>Signup</li>
+                  <li>Cart Page</li>
+                  <li>Checkout Page</li>
+                  <p>Area of Responsibility : Developed the product page and
+                  navigation bar</p>
+                  
+                </div>
               </div>
+              
               <div className={` project-tech-stack ${style.techDiv}`}>
                 <p> HTML </p>
                 <p> CSS </p>
