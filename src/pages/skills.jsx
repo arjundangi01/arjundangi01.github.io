@@ -32,8 +32,8 @@ const Skills = () => {
       <div className={`${style.container}`}>
         <Skill img={htmlImg}name={"HTML"} />
         <Skill img={cssImg} name={"CSS"}/>
-        <Skill img={javaImg}name={"JAVASCRIPT"} />
-        <Skill img={javaImg}name={"JAVA"} />
+        <Skill img={cssImg}name={"JAVA"} />
+        <Skill img={cssImg}name={"JAVA"} />
         <Skill img={reactImg}name={"React"} />
         <Skill img={routerImg}name={"Router"} />
         <Skill img={reduxImg} name={"Redux"}/>
