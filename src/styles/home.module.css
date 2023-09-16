@@ -21,16 +21,16 @@
 }
 
 /* -------------left start- ------------------------ */
-.animated-text {
+.animated_text {
   margin: 2rem 0rem;
 }
-.h-text {
+.h_text {
   color: rgb(49, 175, 228);
 }
 /* -------------left end------------------------- */
 
 /* -------------right start- ------------------------ */
-.home-img {
+.home_img {
   width: 80%;
   border-radius: 20px;
 }

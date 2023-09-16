@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/home.css";
+import style from "../styles/home.module.css";
 import arjunImg from "./Images/avatar.jpg";
 import Typewriter from "typewriter-effect";
 import { motion, Variants } from "framer-motion";
@@ -18,15 +18,15 @@ const Home = () => {
     },
   };
   return (
-    <div id="home">
-      <div className="container">
+    <div id={`${style.home}`}>
+      <div className={style.container}>
         <motion.div
           initial={"offscreen"}
           animate={"onscreen"}
           variants={textAnimate}
         >
           <div className="left-div">
-            <h2 className="animated-text h-text">
+            <h2 className={`${style.animated_text} ${style.h_text}}`}>
               <Typewriter
                 options={{
                   autoStart: true,
@@ -43,10 +43,10 @@ const Home = () => {
             </h2>
 
             <h1 id="user-detail-name">
-              I am <span className="h-text">Arjun Dangi</span>{" "}
+              I am <span className={`${style.h_text}`}>Arjun Dangi</span>{" "}
             </h1>
             <h1 id="user-detail-intro">Aspiring Full Stack </h1>
-            <h1 className="h-text">Developer</h1>
+            <h1 className={`${style.h_text}`}>Developer</h1>
             <div>
               <Button text={<AiFillGithub />} />
               <Button text={<AiFillLinkedin />} />
@@ -55,7 +55,7 @@ const Home = () => {
           </div>
         </motion.div>
         <div className="right-div">
-          <img className="home-img" src={arjunImg} alt="" />
+          <img className={`${style.home_img}`} src={arjunImg} alt="" />
         </div>
       </div>
     </div>
