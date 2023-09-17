@@ -4,9 +4,23 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlinePhone } from "react-icons/ai";
+import { motion, Variants } from "framer-motion";
+
 const Contact = () => {
   return (
     <div id="contact" className={`${style.contact}`}>
+     <motion.h2
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: false, amount: 1 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className={"sectionHeading"}
+        data-outline="Contact"
+      >
+        Contact
+      </motion.h2>
       <div className={`${style.container}`}>
         <a href="https://github.com/arjundangi01" target="blank">
           <div id="contact-github" className={`${style.card}`}>

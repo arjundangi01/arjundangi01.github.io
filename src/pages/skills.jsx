@@ -11,39 +11,50 @@ import nodeJSImg from "./Images/nodejs.png";
 import mongoJSImg from "./Images/mongo.png";
 import { motion, Variants } from "framer-motion";
 
-
 const Skills = () => {
   const containerAnimate = {
-    offscreen: { y: 0,opacity:0 },
+    offscreen: { y: 0, opacity: 0 },
     onscreen: {
       y: -80,
       opacity: 1,
-    
+
       transition: { duration: 0.8 },
     },
   };
   return (
     <div id="skills" className={`${style.skillsContainer}`}>
+      <motion.h2
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: false, amount: 1 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className={"sectionHeading"}
+        data-outline="SKILLS"
+      >
+        SKILLS
+      </motion.h2>
       <motion.div
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          variants={containerAnimate}
-        >
-      <div className={`${style.container}`}>
-        <Skill img={htmlImg}name={"HTML"} />
-        <Skill img={cssImg} name={"CSS"}/>
-        <Skill img={cssImg}name={"JAVA"} />
-        <Skill img={cssImg}name={"JAVA"} />
-        <Skill img={reactImg}name={"React"} />
-        <Skill img={routerImg}name={"Router"} />
-        <Skill img={reduxImg} name={"Redux"}/>
-        <Skill img={nodeJSImg}name={"Node Js"} />
-        <Skill img={mongoJSImg} name={"Mongo"}/>
-        <Skill img={htmlImg}name={"HTML"} />
-        <Skill img={htmlImg}name={"HTML"} />
-        <Skill img={htmlImg} name={"HTML"} />
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        variants={containerAnimate}
+      >
+        <div className={`${style.container}`}>
+          <Skill img={htmlImg} name={"HTML"} />
+          <Skill img={cssImg} name={"CSS"} />
+          <Skill img={cssImg} name={"JAVA"} />
+          <Skill img={cssImg} name={"JAVA"} />
+          <Skill img={reactImg} name={"React"} />
+          <Skill img={routerImg} name={"Router"} />
+          <Skill img={reduxImg} name={"Redux"} />
+          <Skill img={nodeJSImg} name={"Node Js"} />
+          <Skill img={mongoJSImg} name={"Mongo"} />
+          <Skill img={htmlImg} name={"HTML"} />
+          <Skill img={htmlImg} name={"HTML"} />
+          <Skill img={htmlImg} name={"HTML"} />
         </div>
-        </motion.div>
+      </motion.div>
     </div>
   );
 };

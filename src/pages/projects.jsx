@@ -3,9 +3,24 @@ import Project from "../components/project";
 import style from "../styles/projects.module.css";
 import glossierImg from "../pages/Images/gloosier.png";
 import gssImg from "./Images/gloosier s.png";
+import myntraImg from "./Images/myntra.png";
+import { motion, Variants } from "framer-motion";
+
 const Projects = () => {
   return (
     <div id="projects" className={`  ${style.projects}`}>
+        <motion.h2
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: false, amount: 1 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className={"sectionHeading"}
+        data-outline="PROJECTS"
+      >
+        PROJECTS
+      </motion.h2>
       <div className={` ${style.container}`}>
         <div className={`project-card ${style.project}`}>
           <div className={`${style.content}`}>
@@ -35,18 +50,20 @@ const Projects = () => {
                   <li>Signup</li>
                   <li>Cart Page</li>
                   <li>Checkout Page</li>
-                  <p>Area of Responsibility : Developed the product page and
-                  navigation bar</p>
+                  <p>Area of Responsibility : Developed the product page,
+                  cart page and wishlist page</p>
                   
                 </div>
               </div>
-              
+              <div>
+                <h4>Tech Stack Used</h4>
               <div className={` project-tech-stack ${style.techDiv}`}>
                 <p> HTML </p>
                 <p> CSS </p>
                 <p> JavaScript </p>
                 <p> Local Storage </p>
-              </div>
+                </div>
+                </div>
             </div>
           </div>
           <div className={`${style.imgDiv}`}>
@@ -58,6 +75,10 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
+        {/*  */}
+     
+        {/*  */}
       </div>
     </div>
   );
@@ -65,32 +86,4 @@ const Projects = () => {
 
 export default Projects;
 
-{
-  /* <div className={`${style.right1}`}>
-<h1 className={`project-title`} >Myntra Clone</h1>
 
-<div className={`${style.inner1}`}>
-  <p className={` project-description ${style.description1}`}>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-    illum repellat delectus obcaecati! Quibusdam error dignissimos
-    alias beatae, aliquid voluptatibus accusantium! Nulla asperiores
-    iure nemo error. Et assumenda repellendus dicta. Lorem ipsum
-    dolor sit amet consectetur adipisicing elit. Fugit illum
-    repellat delectus obcaecati! Quibusdam error dignissimos alias
-    beatae, aliquid voluptatibus accusantium! Nulla asperiores iure
-    nemo error. Et assumenda repellendus dicta.
-  </p>
-</div>
-
-<div className={` project-tech-stack ${style.techDiv}`}>
-  <p> HTML </p>
-  <p> CSS </p>
-  <p> JavaScript </p>
-  <p> Local Storage </p>
-</div>
-<div>
-  <button className={`project-github-link`} >github</button>
-  <button className={`project-deployed-link`} >preview</button>
-</div>
-</div> */
-}

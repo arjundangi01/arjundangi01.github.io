@@ -12,6 +12,18 @@ const textAnimate = {
 const About = () => {
   return (
     <div id="about" className={`about section ${style.about2}`}>
+       <motion.h2
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: false, amount: 1 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className={"sectionHeading"}
+        data-outline="ABOUT"
+      >
+        ABOUT
+      </motion.h2>
       <div className={`${style.container}`}>
         <div className={`${style.leftDiv}`}>
           {/* <img src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="" /> */}
@@ -61,7 +73,9 @@ const About = () => {
             target="_blank"
             href="https://drive.google.com/u/0/uc?id=1ac9QC_NaLOMpNl9UpMvkjwPP7uW9c5ps&export=download"
           >
-            <button id="resume-button-2" >RESUME</button>
+              <button className={style.button} id="resume-button-2" >
+              <span className={style.buttonContent}>Resume </span>
+            </button>
             </a>
            
           </div>

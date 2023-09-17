@@ -14,3 +14,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.sectionHeading {
+  font-size: clamp(32px, 10vw, 128px);
+  font-size: 3.125rem;
+  color: #2979a3;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  letter-spacing: 3.2px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  z-index: 5;
+}
+.sectionHeading::before {
+  content: attr(data-outline);
+  
+  position: absolute;
+  left: 1%;
+  font-size: 3rem;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 800;
+  /* letter-spacing: 3.2px; */
+  /* color: transparent; */
+  /* color: #1a1a1a; */
+  color: #09a9ff;
+  opacity: 20%;
+  -webkit-text-stroke: .0938rem #e8e6ee2f;
+  z-index: 2;
+}

@@ -73,7 +73,7 @@ a {
   height: 5px;
   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   z-index: -1;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover::before {
