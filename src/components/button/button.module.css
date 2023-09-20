@@ -1,5 +1,7 @@
 .btn_back_div {
   border-radius: 5px;
+  width: fit-content;
+
   max-width: fit-content;
 
   background-color: #17b7c3;

@@ -5,7 +5,6 @@
   padding: 5rem;
   margin-bottom: 10px;
   border: border-box;
-  
 }
 
 .container {
@@ -20,11 +19,11 @@
   margin: auto;
   margin-top: 8rem;
 }
-.dot{
-   background-color: #000;
-   height: 20px;
-   width: 20px;
-   border-radius: 50%;
+.dot {
+  background-color: #000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
 }
 
 /* -------------top start--------- */
@@ -33,27 +32,25 @@
   justify-content: space-between;
   margin-bottom: 2rem;
   /* border: 1px solid #000; */
-  
 }
-.contentLeft{
+.contentLeft {
   /* border: 1px solid #000; */
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
-.subTitle{
+.subTitle {
   opacity: 0.5;
 }
 
-.btnDiv{
+.btnDiv {
   display: flex;
   gap: 2rem;
   /* border: 1px solid #000; */
 }
 
-.contentRight{
+.contentRight {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -61,20 +58,18 @@
   gap: 2rem;
 
   /* border: 1px solid #000; */
-
 }
- 
+
 .inner1 {
-padding-right: 1rem;
+  padding-right: 1rem;
 
   height: 150px;
   overflow-y: scroll;
-  text-align: justify; 
+  text-align: justify;
 }
 
 .inner1::-webkit-scrollbar {
   width: 3px;
-  
 }
 .inner1::-webkit-scrollbar-thumb {
   background: rgb(13, 165, 230);
@@ -90,23 +85,18 @@ padding-right: 1rem;
   background: #ffffff;
   background-size: 400%;
   color: #0e0e0e;
- border: 1px solid #000;
+  border: 1px solid #000;
 }
 .button:hover::before {
-
-
   transform: scaleX(1);
 }
 .buttonContent {
   position: relative;
   z-index: 1;
   font-size: 1.2rem;
-  
-
 }
 .button::before {
-  
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -121,8 +111,6 @@ padding-right: 1rem;
     rgba(99, 88, 238, 1) 94.3%
   );
   transition: all 0.475s;
-  
-
 }
 
 /* -------------top end--------- */
@@ -143,7 +131,6 @@ padding-right: 1rem;
 }
 
 .description1 {
- 
   font-size: 1.2rem;
 }
 .description1 p {
@@ -171,7 +158,6 @@ padding-right: 1rem;
   border-radius: 15px;
   /* height: 600px; */
   width: 80%;
- 
 
   overflow: hidden;
 }
@@ -200,7 +186,6 @@ padding-right: 1rem;
 }
 /* -------------bottom end--------- */
 
-
 @media only screen and (min-width: 900px) and (max-width: 1250px) {
   .container {
     width: 100%;
@@ -208,7 +193,6 @@ padding-right: 1rem;
   .project {
     /* display: flex; */
     width: 90%;
-   
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 900px) {
@@ -218,22 +202,20 @@ padding-right: 1rem;
   .project {
     /* display: flex; */
     width: 100%;
-   
   }
   .projects {
     padding: 1rem;
-   
   }
-  .content{
+  .content {
     flex-direction: column;
     /* border: 1px solid #000;
      */
   }
-  .contentRight{
+  .contentRight {
     width: 90%;
   }
 }
-@media only screen  and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .container {
     width: 100%;
   }
@@ -241,23 +223,51 @@ padding-right: 1rem;
   .project {
     /* display: flex; */
     width: 100%;
-   
   }
   .projects {
     padding: 1rem;
-   
   }
-  .content{
+  .content {
     flex-direction: column;
     /* border: 1px solid #000;
      */
   }
-  .contentRight{
+  .contentRight {
     width: 90%;
   }
-  .techDiv{
+  .techDiv {
     justify-content: center;
     /* border: 1px solid #000; */
   }
 }
-
+@media only screen and (max-width: 455px) {
+  .content {
+    width: 100%;
+    /* border: 1px solid #000; */
+  }
+  .contentLeft{
+    /* border: 1px solid #000; */
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .techDiv {
+    gap: 0rem 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* border: 1px solid #000; */
+  }
+  .techDiv p {
+    padding: 0.3rem 0.6rem;
+  }
+  .deskImgDiv {
+    width: 100%;
+    border: 1px solid #000;
+  }
+  .deskImgDiv img{
+    width: 100%;
+  }
+  .phoneImgDiv {
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+}

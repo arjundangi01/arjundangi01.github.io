@@ -82,7 +82,7 @@ export default function Navbar() {
               target="_blank"
               href="https://drive.google.com/u/0/uc?id=1ac9QC_NaLOMpNl9UpMvkjwPP7uW9c5ps&export=download"
             >
-              <button className={`project-deployed-link ${style.button}`}>
+              <button id="resume-button-1" className={`${style.button}`}>
                 <span className={style.buttonContent}>Resume </span>
               </button>
             </a>
