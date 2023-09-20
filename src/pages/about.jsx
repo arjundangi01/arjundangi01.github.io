@@ -38,7 +38,7 @@ const About = () => {
               initial={{ y: -20, x: -20 }}
               whileHover={{ y: -40, x: -40 }}
             >
-              <img src={arjunImg} alt="" />
+              <img className="home-img" src={arjunImg} alt="" />
             </motion.div>
           </motion.div>
         </div>
