@@ -1,6 +1,7 @@
 import React from "react";
 import style from "../styles/about.module.css";
 import { motion, Variants } from "framer-motion";
+import arjunImg from "./Images/avatar.jpg"
 const textAnimate = {
   offscreen: { x: 100 },
   onscreen: {
@@ -27,6 +28,7 @@ const About = () => {
       <div className={`${style.container}`}>
         <div className={`${style.leftDiv}`}>
           {/* <img src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="" /> */}
+          <img src={arjunImg} alt="" />
         </div>
         <motion.div className={`${style.rightDdiv}`}  initial={"offscreen"}
           animate={"onscreen"}

@@ -18,7 +18,7 @@ const Home = () => {
     },
   };
   return (
-    <div id={`${style.home}`}>
+    <div id="home" className={style.home} >
       <div className={style.container}>
         <motion.div
           initial={"offscreen"}
