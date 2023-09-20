@@ -4,11 +4,11 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navSec  ">
       <div
-        id={style.nav_menu}
-        className="container-fluid fixed-top pe-lg-1 ps-lg-5 pt-lg-2 pb-lg-2"
+        id="nav-menu"
+        className={`container-fluid fixed-top pe-lg-1 ps-lg-4 pt-lg-1 pb-lg-1 ${style.nav_menu}`}
       >
         <a className="navbar-brand" href="#">
-          <span className={style.span} >A</span>rjun{" "}
+          <span className={style.span}>A</span>rjun{" "}
           <span>
             <img
               className="ms-lg-2"
@@ -34,56 +34,57 @@ export default function Navbar() {
         >
           <div className="navbar-nav align-items-center ">
             <a
-              className="nav-link home active me-5 "
+              className="nav-link home active me-5 text-light "
               aria-current="page"
               href="#home"
+
             >
               HOME
             </a>
             <a
-              className="nav-link about active me-5 "
+              className="nav-link about active me-5 text-light "
               aria-current="page"
               href="#about"
             >
               ABOUT
             </a>
             <a
-              className="nav-link skills active me-5 "
+              className="nav-link skills active me-5 text-light "
               aria-current="page"
               href="#skills"
             >
               SKILLS
             </a>
             <a
-              className="nav-link projects active me-5"
+              className="nav-link projects active me-5 text-light"
               aria-current="page"
               href="#projects"
             >
               PROJECTS
             </a>
             <a
-              className="nav-link active me-5"
+              className="nav-link active me-5 text-light"
               aria-current="page"
               href="#github"
             >
               GITHUB
             </a>
             <a
-              className="nav-link contact active me-5"
+              className="nav-link contact active me-5 text-light"
               aria-current="page"
               href="#contact"
             >
               CONTACT
             </a>
             <a
-              className="nav-link resume active me-5"
+              className="nav-link resume active me-5 text-light"
               aria-current="page"
               target="_blank"
               href="https://drive.google.com/u/0/uc?id=1ac9QC_NaLOMpNl9UpMvkjwPP7uW9c5ps&export=download"
             >
-                <button className={`project-deployed-link ${style.button}`}>
-                  <span className={style.buttonContent}>Resume </span>
-                </button>
+              <button className={`project-deployed-link ${style.button}`}>
+                <span className={style.buttonContent}>Resume </span>
+              </button>
             </a>
           </div>
         </div>

@@ -47,7 +47,7 @@ const Home = () => {
             </h1>
             <h1 id="user-detail-intro">Aspiring Full Stack </h1>
             <h1 className={`${style.h_text}`}>Developer</h1>
-            <div>
+            <div className="d-flex gap-2" >
               <Button text={<AiFillGithub />} />
               <Button text={<AiFillLinkedin />} />
               <Button text={<AiOutlineMail />} />

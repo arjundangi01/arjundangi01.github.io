@@ -1,10 +1,23 @@
+.btn_back_div {
+  border-radius: 5px;
+  max-width: fit-content;
+
+  background-color: #17b7c3;
+}
 .button {
+  border: 1px solid #17b7c3;
+  background: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+}
+
+/* .button {
     position: relative;
     overflow: hidden;
     height: 2.8rem;
     width: 2.8rem;
     padding-bottom: 0.5rem;
-    /* padding: 0 1.2rem 0.2rem 1.2rem; */
+    
    
     margin-right: 0.5rem;
     border-radius: 50%;
@@ -37,4 +50,4 @@
       rgba(99, 88, 238, 1) 94.3%
     );
     transition: all 0.475s;
-  }
+  } */
