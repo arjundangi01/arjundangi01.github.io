@@ -1,6 +1,8 @@
 .skillsContainer {
   color: rgb(0, 0, 0);
   /* margin-top: 25px; */
+  width: 100%;
+  overflow: hidden;
   border: 1px solid #f2f2f2;
   padding: 10rem 0rem;
   
@@ -119,5 +121,18 @@
    font-size: 1rem;
   
   }
+  
+}
+@media only screen and (max-width: 455px) {
+  .container {
+    width: 90%;
+    grid-template-columns: repeat(2,1fr);
+     gap: 2.5rem 1rem;
+  }
+  .skillDiv:hover h3 {
+    font-size: 2rem;
+   
+   }
+  
   
 }

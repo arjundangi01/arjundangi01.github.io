@@ -4,10 +4,10 @@ import { motion, Variants } from "framer-motion";
 import arjunImg from "./Images/avatar.jpg";
 import Button from "../components/button/button";
 const textAnimate = {
-  offscreen: { x: 100 },
+  offscreen: { x: 80 },
   onscreen: {
     x: 10,
-    transition: { duration: 2 },
+    transition: { duration: 1 },
   },
 };
 
@@ -45,7 +45,7 @@ const About = () => {
         <motion.div
           className={`${style.rightDdiv}`}
           initial={"offscreen"}
-          animate={"onscreen"}
+          whileInView={"onscreen"}
           variants={textAnimate}
         >
           <div>

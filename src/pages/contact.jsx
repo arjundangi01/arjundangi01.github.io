@@ -8,7 +8,7 @@ import { motion, Variants } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div id="contact" className={`${style.contact}`}>
+    <div id="contact" className={`${style.contact}`}  >
      <motion.h2
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
