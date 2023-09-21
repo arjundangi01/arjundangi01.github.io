@@ -3,6 +3,7 @@
   /* justify-content: center; */
   color: rgb(0, 0, 0);
   padding: 0rem 0rem 8rem 0rem;
+  /* border: 1px solid #000; */
 }
 a {
   text-decoration: none;
@@ -14,6 +15,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
+  margin-top: 10rem;
  /* border: 1px solid #000; */
 
 }
