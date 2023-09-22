@@ -20,7 +20,8 @@ const About = () => {
           transition: { duration: 1 },
         }
       : {
-          x: 10,
+        x: 10,
+        opacity: 1,
           transition: { duration: 1 },
         },
   };

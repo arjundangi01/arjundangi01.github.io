@@ -11,19 +11,20 @@ const Github = () => {
   console.log(variant);
   return (
     <div id="github" className={`${style.github}`}>
+         <motion.h2
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: false, amount: 1 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className={"sectionHeading"}
+        data-outline="PROJECTS"
+      >
+        PROJECTS
+      </motion.h2>
       <div className={`${style.container}`}>
-        <motion.h2
-          initial={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: false, amount: 1 }}
-          transition={{
-            duration: 0.5,
-          }}
-          className={"sectionHeading"}
-          data-outline="GITHUB"
-        >
-          GITHUB
-        </motion.h2>
+   
         <div>
           <img
             src="https://github-profile-trophy.vercel.app/?username=arjundangi01"
