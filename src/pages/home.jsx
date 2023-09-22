@@ -8,9 +8,15 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlinePhone } from "react-icons/ai";
+import { useBreakpointValue } from "@chakra-ui/react";
 const Home = () => {
+  const variant = useBreakpointValue({
+    base: true,
+    md: false,
+    lg: false,
+  });
   const textAnimate = {
-    offscreen: { x: -100, opacity: 0 },
+    offscreen: variant ? { x: 0, opacity: 0}: { x: -100, opacity: 0 },
     onscreen: {
       x: 0,
       opacity: 1,

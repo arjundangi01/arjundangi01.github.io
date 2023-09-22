@@ -3,15 +3,28 @@ import style from "../styles/about.module.css";
 import { motion, Variants } from "framer-motion";
 import arjunImg from "./Images/avatar.jpg";
 import Button from "../components/button/button";
-const textAnimate = {
-  offscreen: { x: 80 },
-  onscreen: {
-    x: 10,
-    transition: { duration: 1 },
-  },
-};
+import { useBreakpointValue } from "@chakra-ui/react";
 
 const About = () => {
+  const variant = useBreakpointValue({
+    base: true,
+    md: false,
+    lg: false,
+  });
+  const textAnimate = {
+    offscreen: variant ? { x: 0, opacity: 0 } : { x: 80 },
+    onscreen: variant
+      ? {
+          x: 0,
+          opacity: 1,
+          transition: { duration: 1 },
+        }
+      : {
+          x: 10,
+          transition: { duration: 1 },
+        },
+  };
+
   return (
     <div id="about" className={`about section ${style.about2}`}>
       <motion.h2

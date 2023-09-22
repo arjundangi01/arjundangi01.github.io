@@ -24,28 +24,32 @@
 }
 .container .card
 {
-  position: relative; 
+  /* position: relative;  */
   border-radius: 15px;
   /* background: rgba(9, 55, 75, 0.1); */
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* text-align: center; */
+  
   /* border: 1px solid rgba(10, 9, 9, 0.5); */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   backdrop-filter: blur(5px);
   z-index: 900;
+   display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center; 
   /* max-height: 250px; */
   /* transition: .3s; */
 
 }
 .skillDiv {
-  display: flex;
+  margin: auto;
+
+   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  /* padding: 10px 20px; */
-  text-align: center;
+  flex-direction: column;   
+   text-align: center; 
   transform: translateY(30px);
   opacity: 1;
   transition: 0.5s;
@@ -80,11 +84,12 @@
 .img {
   max-height: 80%;
   min-height: 80%;
-
+   margin: auto;
   min-width: 80%;
   max-width: 80%;
   z-index: 1;
-  object-fit: cover;
+ 
+  /* object-fit: cover; */
 }
 .name {
  

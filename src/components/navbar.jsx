@@ -7,7 +7,7 @@ export default function Navbar() {
         id="nav-menu"
         className={`container-fluid fixed-top pe-lg-1 ps-lg-4 pt-lg-1 pb-lg-1 ${style.nav_menu}`}
       >
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand d-flex align-items-center " href="#">
           <span className={style.span}>A</span>rjun{" "}
           <span>
             <img
