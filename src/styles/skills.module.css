@@ -3,8 +3,8 @@
   /* margin-top: 25px; */
   width: 100%;
   overflow: hidden;
-  border: 1px solid #f2f2f2;
-  padding: 10rem 0rem;
+  /* border: 1px solid #f2f2f2; */
+  padding: 6rem 0rem;
   
 }
 .container {
@@ -19,7 +19,7 @@
   justify-content: center;
   width: 85%;
   margin: auto;
-  margin-top: 8rem;
+  margin-top: 10rem;
   gap: 4rem 3rem;
 }
 .container .card

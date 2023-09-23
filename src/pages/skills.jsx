@@ -9,9 +9,13 @@ import routerImg from "./Images/router3.png";
 import reduxImg from "./Images/redux.png";
 import nodeJSImg from "./Images/nodejs.png";
 import mongoJSImg from "./Images/mongo.png";
+import expressImg from "./Images/express.png";
 import { motion, Variants } from "framer-motion";
 
 const Skills = () => {
+  const jsImg =
+    "https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"
+  const chakraImg = "https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg"
   const containerAnimate = {
     offscreen: { y: 0, opacity: 0 },
     onscreen: {
@@ -43,15 +47,15 @@ const Skills = () => {
         <div className={`${style.container}`}>
           <Skill img={htmlImg} name={"HTML"} />
           <Skill img={cssImg} name={"CSS"} />
-          <Skill img={cssImg} name={"JAVA"} />
-          <Skill img={cssImg} name={"JAVA"} />
+          <Skill img={jsImg} name={"JS"} />
+          <Skill img={javaImg} name={"JAVA"} />
           <Skill img={reactImg} name={"React"} />
           <Skill img={routerImg} name={"Router"} />
           <Skill img={reduxImg} name={"Redux"} />
           <Skill img={nodeJSImg} name={"Node Js"} />
           <Skill img={mongoJSImg} name={"Mongo"} />
-          <Skill img={htmlImg} name={"HTML"} />
-          <Skill img={htmlImg} name={"HTML"} />
+          <Skill img={expressImg} name={"Express"} />
+          <Skill img={chakraImg} name={"Chakra UI"} />
           <Skill img={htmlImg} name={"HTML"} />
         </div>
       </motion.div>

@@ -1,7 +1,7 @@
 .home {
   color: rgb(5, 5, 5);
   /* margin-top: 25px; */
-  border: 1px solid #332f2f;
+  /* border: 1px solid #332f2f; */
   height: 100vh;
   padding: 8rem 0rem;
   background-color: #ffffff;
@@ -17,6 +17,9 @@
 
 .right_div {
   text-align: end;
+  display: flex;
+  justify-content: end;
+  /* border: 1px solid #000; */
 }
 /* -------------left start- ------------------------ */
 .animated_text {
@@ -30,6 +33,7 @@
 /* -------------right start- ------------------------ */
 .home_img {
   width: 90%;
+  /* margin-left: ; */
   border-radius: 20px;
 }
 /* -------------right end------------------------- */

@@ -10,6 +10,8 @@
 .container {
   width: 90%;
   margin: auto;
+  margin-top: 8rem;
+
   /* border: 1px solid #a50606; */
   /* height: 80px; */
 }

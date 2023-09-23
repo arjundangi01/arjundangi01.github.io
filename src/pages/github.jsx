@@ -19,9 +19,9 @@ const Github = () => {
           duration: 0.5,
         }}
         className={"sectionHeading"}
-        data-outline="PROJECTS"
+        data-outline="GITHUB"
       >
-        PROJECTS
+        GITHUB
       </motion.h2>
       <div className={`${style.container}`}>
    
