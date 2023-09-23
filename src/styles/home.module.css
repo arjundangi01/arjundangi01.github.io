@@ -2,6 +2,8 @@
   color: rgb(5, 5, 5);
   /* margin-top: 25px; */
   /* border: 1px solid #332f2f; */
+  display: flex;
+
   height: 100vh;
   padding: 8rem 0rem;
   background-color: #ffffff;
@@ -19,6 +21,7 @@
   text-align: end;
   display: flex;
   justify-content: end;
+  width: 60%;
   /* border: 1px solid #000; */
 }
 /* -------------left start- ------------------------ */
@@ -32,12 +35,29 @@
 
 /* -------------right start- ------------------------ */
 .home_img {
-  width: 90%;
+  width: 100%;
   /* margin-left: ; */
   border-radius: 20px;
 }
 /* -------------right end------------------------- */
 
+@media only screen and (min-width: 1000px) and (max-width: 1430px) {
+  .container{
+    width: 85%;
+    /* padding: 4rem 0rem; */
+  
+    
+  }
+  .container div{
+      /* border: 1px solid #000; */
+  }
+}
+@media only screen and (max-width: 1430px) {
+  .home{
+
+  }
+  
+}
 @media only screen and (max-width: 455px) {
   .home {
   padding: 4rem 0rem;

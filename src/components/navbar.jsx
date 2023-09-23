@@ -5,9 +5,9 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navSec  ">
       <div
         id="nav-menu"
-        className={`container-fluid fixed-top pe-lg-1 ps-lg-4 pt-lg-1 pb-lg-1 ${style.nav_menu}`}
+        className={`container-fluid fixed-top pe-1 ps-4 pt-1 pb-1   ${style.nav_menu}`}
       >
-        <a className="navbar-brand d-flex align-items-center " href="#">
+        <a className="navbar-brand d-flex  align-items-center " href="#">
           <span className={style.span}>A</span>rjun{" "}
           <span>
             <img

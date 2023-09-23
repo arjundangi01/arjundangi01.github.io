@@ -2,6 +2,7 @@
   /* display: flex; */
   /* justify-content: center; */
   width: 100%;
+  margin: auto;
   overflow: hidden;
   /* color: rgb(0, 0, 0); */
   padding: 0rem 0rem 8rem 0rem;
@@ -102,4 +103,11 @@ a {
 
 .card .icon:active {
   box-shadow: none;
+}
+
+@media only screen and (min-width: 1275px) and (max-width: 1350px) {
+  .contact {
+    width: 95%;
+    margin: auto;
+  }
 }

@@ -12,23 +12,27 @@
 .container {
   width: 80%;
   margin: auto;
-  /* border: 1px solid #4116cd; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 8rem;
+  align-items: center;
 }
 
 /* -------------left start- ------------------------ */
 .leftDiv {
-  width: 50%;
+  width: 30%;
+  /* border: 1px solid #000; */
+}
+
+.leftDiv img {
+  width: 100%;
   /* border: 1px solid #000; */
 }
 
 .back_div {
   border: 1px solid #17b7c3;
-  width: max-content;
-  max-width: max-content;
+  width: 80%;
+  /* width: fit-content; */
+  max-width: fit-content;
   border-radius: 10px;
   border-radius: 5px;
 }
@@ -37,16 +41,42 @@
 
 /* -------------right start- ------------------------ */
 .rightDdiv {
+  /* width: 50%; */
   padding: 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: flex-start; */
-
+  /* gap: 4rem 4rem; */
   border-radius: 15px;
-  /* border: 1px solid rgba(0,0,0, 0.28); */
-  width: 40%;
+  width: 70%;
+
+  /* border: 1px solid #000; */
 }
+.rightDdiv p {
+  font-size: 1.2rem;
+}
+
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.rightDdiv span {
+  color: #17b7c3;
+}
+.skill_div {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card {
+  text-align: center;
+  border: 1px solid #17b7c3;
+  padding: 0.8rem 0rem;
+  border-radius: 15px;
+  max-width: 280px;
+  min-width: 280px;
+}
+
 table {
   /* border: 1px solid #c91313; */
 }
@@ -58,46 +88,139 @@ tbody td {
   padding: 0.7rem 1rem;
 }
 
-
 /* -------------right end------------------------- */
 
-@media only screen and (min-width: 900px) and (max-width: 1250px) {
+@media only screen and (min-width: 1200px) and (max-width: 1450px) {
   .container {
-    flex-direction: column;
+    width: 90%;
   }
 }
-@media only screen and (min-width: 700px) and (max-width: 900px) {
-  .container {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 890px) and (max-width: 1200px) {
   .container {
     width: 100%;
     flex-direction: column;
   }
+  .my_desc{
+    text-align: justify;
+    padding: 0rem 0.5rem;
+   
+  }
+  .card_container {
+    /* border: 1px solid #000; */
+    justify-content: center;
+  }
+  .skill_div {
+    display: flex;
+   flex-wrap: wrap;
+   gap: 0rem 1rem ;
+   margin: auto;
+   width: 60%;
+   justify-content: center;
+   /* border: 1px solid #000; */
+  }
+
+  .rightDdiv a {
+    display: block;
+    width: 50%; 
+
+    margin: auto;
+    /* border: 1px solid #000; */
+  }
 }
+@media only screen and (min-width: 455px) and (max-width: 895px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    /* border: 1px solid #000; */
+  }
+  .leftDiv {
+    width: 40%;
+    margin: auto;
+    /* border: 1px solid #000; */
+  }
+  .leftDiv div {
+    /* max-width: 250px; */
+    margin: auto;
+    /* border: 1px solid #000; */
+  }
+  .rightDdiv{
+    width: 80%;
+  }
+  .my_desc{
+    text-align: justify;
+    padding: 0rem 0.5rem;
+   
+  }
+  .card_container {
+    /* border: 1px solid #000; */
+    justify-content: center;
+  }
+  .skill_div {
+    display: flex;
+   flex-wrap: wrap;
+   gap: 0rem 1rem ;
+   margin: auto;
+   width: 60%;
+   justify-content: center;
+   /* border: 1px solid #000; */
+  }
+
+  .rightDdiv a {
+    display: block;
+    width: 50%; 
+    margin: auto;
+    /* border: 1px solid #000; */
+  }
+}
+
 @media only screen and (max-width: 455px) {
-  
   .container {
-     flex-direction: column;
+    flex-direction: column;
     gap: 2rem 0rem;
     align-items: center;
   }
   .leftDiv {
-   text-align: center;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid #000; */
+    /* text-align: end; */
   }
-  .leftDiv img{
-    max-width: 250px;
-
+  .leftDiv div {
+    /* max-width: 250px; */
+    margin: auto;
     /* border: 1px solid #000; */
   }
   .rightDdiv {
     padding: 0rem 0rem;
-    /* text-align: center; */
-   /* margin: auto; */
-   /* border: 1px solid #000; */
-    width: 90%;
+    width: 95%;
+    margin: auto;
+
+    /* border: 1px solid #000; */
   }
+  .my_desc{
+    text-align: justify;
+    padding: 0rem 0.5rem;
+  }
+  .card_container {
+    /* border: 1px solid #000; */
+    justify-content: center;
+  }
+  .skill_div {
+    width: 100%;
+    /* border: 1px solid #000; */
+  }
+  .skill_div div {
+    width: 100%;
+    width: max-content;
+    margin: auto;
+    /* border: 1px solid #000; */
+  }
+  .rightDdiv a {
+    display: block;
+    width: 50%; 
+
+    margin: auto;
+    /* border: 1px solid #000; */
+  }
+
 }
