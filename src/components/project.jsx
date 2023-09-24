@@ -1,7 +1,16 @@
 import React from "react";
 import style from "../styles/projects.module.css";
-import glossierImg from "../pages/Images/gloosier.png";
-import gssImg from "../pages/Images/gloosier s.png";
+
+import { motion, Variants } from "framer-motion";
+const ImageAnimate = {
+  offscreen: { y:20, opacity: 0 },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+
+    transition: { duration: 2 },
+  },
+};
 const Project = ({
   title,
   subTitle,
@@ -13,17 +22,18 @@ const Project = ({
   resp,
   git,
   preview,
+  ind
 }) => {
   return (
     <div className={`project-card ${style.project}`}>
       <div className={`${style.content}`}>
         <div className={`${style.contentLeft}`}>
           <div>
-            <h1 className={`project-title`}>{title} </h1>
+            <h1 className={`project-title`}> <span>{ind+1}.</span> {title} </h1>
             <h3 className={`${style.subTitle}`}>{subTitle}</h3>
           </div>
           <div className={style.btnDiv}>
-            <a href={git }>
+            <a href={git } target="blank" >
             <button className={`project-github-link ${style.button}`}>
               <span className={style.buttonContent}>Github </span>
             </button>
@@ -62,6 +72,11 @@ const Project = ({
           </div>
         </div>
       </div>
+      <motion.div
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        variants={ImageAnimate}
+      >
       <div className={`${style.imgDiv}`}>
         <div className={`${style.deskImgDiv}`}>
           <img src={img1} alt="" />
@@ -69,7 +84,8 @@ const Project = ({
         <div className={`${style.phoneImgDiv}`}>
           <img src={img2} alt="" />
         </div>
-      </div>
+        </div>
+        </motion.div>
     </div>
   );
 };

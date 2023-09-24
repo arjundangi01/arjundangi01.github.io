@@ -10,6 +10,7 @@ import reduxImg from "./Images/redux.png";
 import nodeJSImg from "./Images/nodejs.png";
 import mongoJSImg from "./Images/mongo.png";
 import expressImg from "./Images/express.png";
+import tailwind from "./Images/tailwind.jpg"
 import { motion, Variants } from "framer-motion";
 
 const Skills = () => {
@@ -56,7 +57,7 @@ const Skills = () => {
           <Skill img={mongoJSImg} name={"Mongo"} />
           <Skill img={expressImg} name={"Express"} />
           <Skill img={chakraImg} name={"Chakra UI"} />
-          <Skill img={htmlImg} name={"HTML"} />
+          <Skill img={tailwind} name={"Tailwind"} />
         </div>
       </motion.div>
     </div>

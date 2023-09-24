@@ -16,7 +16,7 @@ const Home = () => {
     lg: false,
   });
   const textAnimate = {
-    offscreen: variant ? { x: 0, opacity: 0}: { x: -100, opacity: 0 },
+    offscreen: variant ? { x: 0, opacity: 0 } : { x: -100, opacity: 0 },
     onscreen: {
       x: 0,
       opacity: 1,
@@ -24,14 +24,14 @@ const Home = () => {
     },
   };
   return (
-    <div id="home" className={style.home} >
+    <div id="home" className={style.home}>
       <div className={style.container}>
         <motion.div
           initial={"offscreen"}
           animate={"onscreen"}
           variants={textAnimate}
         >
-          <div className="left-div">
+          <div className={style.left_div}>
             <h2 className={`${style.animated_text} ${style.h_text}}`}>
               <Typewriter
                 options={{
@@ -53,10 +53,16 @@ const Home = () => {
             </h1>
             <h1 id="user-detail-intro">Aspiring Full Stack </h1>
             <h1 className={`${style.h_text}`}>Developer</h1>
-            <div className="d-flex gap-2" >
-              <Button text={<AiFillGithub />} />
-              <Button text={<AiFillLinkedin />} />
-              <Button text={<AiOutlineMail />} />
+            <div className="d-flex gap-2">
+              <a href="https://github.com/arjundangi01" target="blank" >
+                <Button text={<AiFillGithub />} />
+              </a>
+              <a href="https://www.linkedin.com/in/arjun-dangi/" target="blank">
+                <Button text={<AiFillLinkedin />} />
+              </a>
+              <a href="">
+                <Button text={<AiOutlineMail />} />
+              </a>
             </div>
           </div>
         </motion.div>

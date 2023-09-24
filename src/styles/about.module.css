@@ -76,6 +76,9 @@
   max-width: 280px;
   min-width: 280px;
 }
+.card h2{
+    color: rgb(116, 115, 115);
+}
 
 table {
   /* border: 1px solid #c91313; */
@@ -95,6 +98,11 @@ tbody td {
     width: 90%;
   }
 }
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .rightDdiv {
+    width: 90%;
+  }
+}
 @media only screen and (min-width: 890px) and (max-width: 1200px) {
   .container {
     width: 100%;
@@ -104,6 +112,16 @@ tbody td {
     text-align: justify;
     padding: 0rem 0.5rem;
    
+  }
+  .leftDiv {
+    width: 45%;
+    margin: auto;
+    /* border: 1px solid #000; */
+  }
+  .leftDiv div {
+    /* max-width: 250px; */
+    margin: auto;
+    /* border: 1px solid #000; */
   }
   .card_container {
     /* border: 1px solid #000; */
@@ -118,7 +136,9 @@ tbody td {
    justify-content: center;
    /* border: 1px solid #000; */
   }
-
+  .rightDdiv {
+    width: 90%;
+  }
   .rightDdiv a {
     display: block;
     width: 50%; 
@@ -134,7 +154,7 @@ tbody td {
     /* border: 1px solid #000; */
   }
   .leftDiv {
-    width: 40%;
+    width: 50%;
     margin: auto;
     /* border: 1px solid #000; */
   }
@@ -144,7 +164,7 @@ tbody td {
     /* border: 1px solid #000; */
   }
   .rightDdiv{
-    width: 80%;
+    width: 90%;
   }
   .my_desc{
     text-align: justify;
@@ -160,7 +180,7 @@ tbody td {
    flex-wrap: wrap;
    gap: 0rem 1rem ;
    margin: auto;
-   width: 60%;
+   width: 90%;
    justify-content: center;
    /* border: 1px solid #000; */
   }

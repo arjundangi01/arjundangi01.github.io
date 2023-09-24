@@ -80,7 +80,7 @@ export default function Navbar() {
               className="nav-link resume active me-5 text-light"
               aria-current="page"
               target="_blank"
-              href="https://drive.google.com/u/0/uc?id=1ac9QC_NaLOMpNl9UpMvkjwPP7uW9c5ps&export=download"
+              href="https://drive.google.com/file/d/1g1p0r_ZLrjd9HtU44ZRflT0ZjvDOirkY/view?usp=drive_link"
             >
               <button id="resume-button-1" className={`${style.button}`}>
                 <span className={style.buttonContent}>Resume </span>

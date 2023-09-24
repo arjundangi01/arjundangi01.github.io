@@ -16,9 +16,9 @@ const data = [
     img1: travelImg,
     img2: travelS,
     desc: "Build a travel website in 7 days along with a team of 5 members.",
-    techUsed: ["React", "Routing", "JavaScript", "Redux","API"],
+    techUsed: ["React", "Routing", "JavaScript", "Redux","API","auth0"],
     features: ["Login", "Signup", "Booking History and update facility" , "Profile Page", "Checkout Page"],
-    resp: "Developed the profile page, tour detail page and, navbar",
+    resp: " Integrated auth0 and developed the profile page, tour detail page and, navbar",
     git: "https://github.com/arjundangi01/Travelious",
     preview:"https://travelious-project.netlify.app/"
   },
@@ -49,6 +49,8 @@ const data = [
   
 ];
 
+
+
 const Projects = () => {
   return (
     <div id="projects" className={`  ${style.projects}`}>
@@ -69,8 +71,8 @@ const Projects = () => {
 
         {/*  */}
         {
-          data.map((ele) => (
-            <Project {...ele} />
+          data.map((ele,ind) => (
+            <Project {...ele} ind={ind}  />
           ))
        }
 
