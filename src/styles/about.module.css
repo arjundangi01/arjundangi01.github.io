@@ -76,19 +76,8 @@
   max-width: 280px;
   min-width: 280px;
 }
-.card h2{
-    color: rgb(116, 115, 115);
-}
-
-table {
-  /* border: 1px solid #c91313; */
-}
-tbody tr {
-  /* display: flex; */
-  margin: 1rem 0rem;
-}
-tbody td {
-  padding: 0.7rem 1rem;
+.card h2 {
+  color: rgb(116, 115, 115);
 }
 
 /* -------------right end------------------------- */
@@ -108,10 +97,9 @@ tbody td {
     width: 100%;
     flex-direction: column;
   }
-  .my_desc{
+  .my_desc {
     text-align: justify;
     padding: 0rem 0.5rem;
-   
   }
   .leftDiv {
     width: 45%;
@@ -129,22 +117,20 @@ tbody td {
   }
   .skill_div {
     display: flex;
-   flex-wrap: wrap;
-   gap: 0rem 1rem ;
-   margin: auto;
-   width: 60%;
-   justify-content: center;
-   /* border: 1px solid #000; */
+    flex-wrap: wrap;
+    gap: 0rem 1rem;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    /* border: 1px solid #000; */
   }
   .rightDdiv {
     width: 90%;
   }
-  .rightDdiv a {
-    display: block;
-    width: 50%; 
-
-    margin: auto;
-    /* border: 1px solid #000; */
+ 
+  .button_div{
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 455px) and (max-width: 895px) {
@@ -163,13 +149,12 @@ tbody td {
     margin: auto;
     /* border: 1px solid #000; */
   }
-  .rightDdiv{
+  .rightDdiv {
     width: 90%;
   }
-  .my_desc{
+  .my_desc {
     text-align: justify;
     padding: 0rem 0.5rem;
-   
   }
   .card_container {
     /* border: 1px solid #000; */
@@ -177,19 +162,18 @@ tbody td {
   }
   .skill_div {
     display: flex;
-   flex-wrap: wrap;
-   gap: 0rem 1rem ;
-   margin: auto;
-   width: 90%;
-   justify-content: center;
-   /* border: 1px solid #000; */
+    flex-wrap: wrap;
+    gap: 0rem 1rem;
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+    /* border: 1px solid #000; */
   }
 
-  .rightDdiv a {
-    display: block;
-    width: 50%; 
-    margin: auto;
-    /* border: 1px solid #000; */
+
+  .button_div{
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -217,7 +201,7 @@ tbody td {
 
     /* border: 1px solid #000; */
   }
-  .my_desc{
+  .my_desc {
     text-align: justify;
     padding: 0rem 0.5rem;
   }
@@ -235,12 +219,20 @@ tbody td {
     margin: auto;
     /* border: 1px solid #000; */
   }
-  .rightDdiv a {
-    display: block;
-    width: 50%; 
-
-    margin: auto;
-    /* border: 1px solid #000; */
+ 
+  .button_div{
+    display: flex;
+    justify-content: center;
   }
-
+}
+@media only screen and (max-width: 370px) {
+  .skill_div {
+    margin-left: -1rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .skill_div {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

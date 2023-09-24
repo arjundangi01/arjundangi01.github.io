@@ -7,6 +7,7 @@ import { useBreakpointValue } from "@chakra-ui/react";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 const About = () => {
+  
   const variant = useBreakpointValue({
     base: true,
     md: false,
@@ -140,14 +141,20 @@ const About = () => {
               </div>
             </div>
 
-            <a
+           
+            <div className={style.button_div} >
+              <a
               className="resume active me-5"
               aria-current="page"
               target="_blank"
               href="https://drive.google.com/file/d/1g1p0r_ZLrjd9HtU44ZRflT0ZjvDOirkY/view?usp=drive_link"
             >
               <Button text="Resume" id="resume-button-2" />
-            </a>
+           </a>
+               
+
+            </div>
+            
           </div>
         </div>
       </div>
@@ -157,33 +164,4 @@ const About = () => {
 
 export default About;
 
-{
-  /* <table>
-<tbody>
-  <tr>
-    <td>Name : </td>
-    <td>Arjun Dangi</td>
-  </tr>
-  <tr>
-    <td>Date of Birth : </td>
-    <td>February 01, 2003</td>
-  </tr>
-  <tr>
-    <td>Address : </td>
-    <td>Indore, Madhya Pradesh</td>
-  </tr>
-  <tr>
-    <td>Zip Code : </td>
-    <td>453001</td>
-  </tr>
-  <tr>
-    <td>Email : </td>
-    <td>arjundangi907473@gmail.com</td>
-  </tr>
-  <tr>
-    <td>Mobile : </td>
-    <td>+91 8349831395</td>
-  </tr>
-</tbody>
-</table> */
-}
+
