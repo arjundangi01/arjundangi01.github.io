@@ -132,6 +132,9 @@
     display: flex;
     justify-content: center;
   }
+  .button_div{
+    margin-left: 4rem;
+  }
 }
 @media only screen and (min-width: 455px) and (max-width: 895px) {
   .container {
@@ -150,7 +153,7 @@
     /* border: 1px solid #000; */
   }
   .rightDdiv {
-    width: 90%;
+    width: 100%;
   }
   .my_desc {
     text-align: justify;
@@ -165,7 +168,7 @@
     flex-wrap: wrap;
     gap: 0rem 1rem;
     margin: auto;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     /* border: 1px solid #000; */
   }
@@ -174,6 +177,9 @@
   .button_div{
     display: flex;
     justify-content: center;
+  }
+  .button_div{
+    margin-left: 4rem;
   }
 }
 
@@ -196,7 +202,7 @@
   }
   .rightDdiv {
     padding: 0rem 0rem;
-    width: 95%;
+    width: 100%;
     margin: auto;
 
     /* border: 1px solid #000; */
@@ -212,12 +218,16 @@
   .skill_div {
     width: 100%;
     /* border: 1px solid #000; */
+    gap: 0rem 1rem;
   }
   .skill_div div {
     width: 100%;
     width: max-content;
     margin: auto;
     /* border: 1px solid #000; */
+  }
+  .button_div{
+    margin-left: 4rem;
   }
  
   .button_div{
@@ -228,6 +238,11 @@
 @media only screen and (max-width: 370px) {
   .skill_div {
     margin-left: -1rem;
+    gap: 0rem 0.4rem;
+
+  }
+  .button_div{
+    margin-left: 4rem;
   }
 }
 @media only screen and (max-width: 300px) {

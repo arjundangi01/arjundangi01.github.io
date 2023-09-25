@@ -278,6 +278,15 @@
     justify-content: center;
     /* border: 1px solid #000; */
   }
+  .deskImgDiv {
+    width: 100%;
+    border: 2px solid #000;
+  }
+  
+  .phoneImgDiv {
+    border: 2px solid #000;
+    border-radius: 10px;
+  }
 }
 @media only screen and (max-width: 455px) {
   .content {
