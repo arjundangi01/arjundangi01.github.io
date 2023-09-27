@@ -40,11 +40,13 @@ const Skills = () => {
       >
         SKILLS
       </motion.h2>
+     
       <motion.div
         initial={"offscreen"}
         whileInView={"onscreen"}
         variants={containerAnimate}
       >
+        
         <div className={`${style.container}`}>
           <Skill img={htmlImg} name={"HTML"} />
           <Skill img={cssImg} name={"CSS"} />

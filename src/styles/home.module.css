@@ -1,4 +1,6 @@
 .home {
+  position: relative;
+
   color: rgb(5, 5, 5);
   /* margin-top: 25px; */
   /* border: 1px solid #332f2f; */
@@ -8,6 +10,7 @@
   padding: 8rem 0rem;
   background-color: #ffffff;
 }
+
 .container {
   width: 80%;
   margin: auto;

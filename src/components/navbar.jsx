@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navSec  ">
       <div
         id="nav-menu"
-        className={`container-fluid fixed-top pe-1 ps-4 pt-1 pb-1   ${style.nav_menu}`}
+        className={`container-fluid fixed-top pe-lg-5 pe-md-5 ps-5 pt-1 pb-1   ${style.nav_menu}`}
       >
         <a className="navbar-brand d-flex  align-items-center " href="#">
           <span className={style.span}>A</span>rjun{" "}
@@ -34,7 +34,7 @@ export default function Navbar() {
         >
           <div className="navbar-nav align-items-center ">
             <a
-              className="nav-link home active me-5 text-light "
+              className="nav-link home active me-5 text-info-emphasis "
               aria-current="page"
               href="#home"
 
@@ -42,42 +42,42 @@ export default function Navbar() {
               HOME
             </a>
             <a
-              className="nav-link about active me-5 text-light "
+              className="nav-link about active me-5 text-info-emphasis "
               aria-current="page"
               href="#about"
             >
               ABOUT
             </a>
             <a
-              className="nav-link skills active me-5 text-light "
+              className="nav-link skills active me-5 text-info-emphasis "
               aria-current="page"
               href="#skills"
             >
               SKILLS
             </a>
             <a
-              className="nav-link projects active me-5 text-light"
+              className="nav-link projects active me-5 text-info-emphasis"
               aria-current="page"
               href="#projects"
             >
               PROJECTS
             </a>
             <a
-              className="nav-link active me-5 text-light"
+              className="nav-link active me-5 text-info-emphasis"
               aria-current="page"
               href="#github"
             >
               GITHUB
             </a>
             <a
-              className="nav-link contact active me-5 text-light"
+              className="nav-link contact active me-5 text-info-emphasis"
               aria-current="page"
               href="#contact"
             >
               CONTACT
             </a>
             <a
-              className="nav-link resume active me-5 text-light"
+              className="nav-link resume active me-5 text-info-emphasis"
               aria-current="page"
               target="_blank"
               href="https://drive.google.com/file/d/1g1p0r_ZLrjd9HtU44ZRflT0ZjvDOirkY/view?usp=drive_link"

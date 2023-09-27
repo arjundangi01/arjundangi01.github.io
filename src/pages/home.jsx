@@ -25,6 +25,7 @@ const Home = () => {
   };
   return (
     <div id="home" className={style.home}>
+      
       <div className={style.container}>
         <motion.div
           initial={"offscreen"}
@@ -54,7 +55,7 @@ const Home = () => {
             <h1 id="user-detail-intro">Aspiring Full Stack </h1>
             <h1 className={`${style.h_text}`}>Developer</h1>
             <div className="d-flex gap-2">
-              <a href="https://github.com/arjundangi01" target="blank" >
+              <a href="https://github.com/arjundangi01" target="blank">
                 <Button text={<AiFillGithub />} />
               </a>
               <a href="https://www.linkedin.com/in/arjun-dangi/" target="blank">
@@ -75,6 +76,7 @@ const Home = () => {
           />
         </div>
       </div>
+     
     </div>
   );
 };

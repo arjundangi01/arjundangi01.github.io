@@ -1,11 +1,12 @@
 .nav_menu {
   border-bottom: 1px solid rgba(255, 255, 255, 0.651);
   margin-bottom: 4rem;
-  background-color: #0f223f;
+  background-color: #ffffff;
 }
 .nav_menu a {
-  /* background-color: #0f172a; */
-  color: #e2e8f0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111213;
 }
 .hamburger {
   /* color: white; */
@@ -25,7 +26,12 @@
   background: #ffffff;
   background-size: 400%;
   color: #0e0e0e;
- border: 1px solid #000;
+ /* border: 1px solid #000; */
+ background: linear-gradient(
+    82.3deg,
+    rgba(93, 193, 233, 0.921) 10.8%,
+    rgba(88, 103, 238, 0.87) 94.3%
+  );
 }
 .button:hover::before {
 
