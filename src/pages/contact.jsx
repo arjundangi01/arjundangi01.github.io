@@ -52,7 +52,7 @@ const Contact = () => {
               <AiOutlineMail />
             </div>
             <div className={`${style.desc}`}>
-              <h5>Linkdin</h5>
+              <h5>Mail</h5>
               <p>arjundangi907473@gmail.com</p>
             </div>
           </div>
