@@ -30,7 +30,7 @@ const data = [
     desc: "Build clone of myntra.com in 7 days along with a team of 5 members.",
     techUsed: ["HTML", "CSS", "JavaScript", "Local Storage"],
     features: ["Login", "Signup", "Cart Page", "Checkout Page"],
-    resp: "Developed the product page, cart page and wishlist page",
+    resp: "Developed the product page(Men's T-shirt), product's static pages, cart page and wishlist page",
     git: "https://github.com/arjundangi01/Myntra-Clone",
     preview:"https://gilded-vacherin-2e78d2.netlify.app/"
   },

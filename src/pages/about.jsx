@@ -147,7 +147,7 @@ const About = () => {
               className="resume active me-5"
               aria-current="page"
               target="_blank"
-              href="https://drive.google.com/file/d/1g1p0r_ZLrjd9HtU44ZRflT0ZjvDOirkY/view?usp=drive_link"
+              href="https://drive.google.com/file/d/13xxj9DMgK6f80ft1GDMZatM5koyu8E8V/view?usp=sharing"
             >
               <Button text="Resume" id="resume-button-2" />
            </a>
