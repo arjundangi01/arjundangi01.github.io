@@ -9,6 +9,7 @@ import Projects from './pages/projects';
 import Skills from './pages/skills';
 import { useSelector } from 'react-redux';
 import style from "./app.module.css"
+import Tools from './pages/tools';
 function App() {
   const [isH1Visible, setIsH1Visible] = useState(true);
  
@@ -19,6 +20,7 @@ function App() {
       <Home isH1Fixed={isH1Visible} setIsH1Fixed={setIsH1Visible} />
       <About />
       <Skills />
+      <Tools/>
       <Projects />
       <Github />
       <Contact/>

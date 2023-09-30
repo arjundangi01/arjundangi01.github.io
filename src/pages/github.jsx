@@ -8,7 +8,7 @@ const Github = () => {
     md: false,
     lg: false,
   });
-  console.log(variant);
+  // console.log(variant);
   return (
     <div id="github" className={`${style.github}`}>
          <motion.h2
@@ -102,7 +102,7 @@ const Github = () => {
         <div>
           {/* calendar */}
           <img
-            class="react-activity-calendar"
+            className="react-activity-calendar"
             src="http://ghchart.rshah.org/arjundangi01"
             alt=""
           />

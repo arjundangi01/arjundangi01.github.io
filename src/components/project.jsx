@@ -53,8 +53,8 @@ const Project = ({
                 { desc}
               </p>
               <p>Features :</p>
-              {features.map((ele) => (
-                <li> {ele} </li>
+              {features.map((ele,ind) => (
+                <li key={ind}> {ele} </li>
               ))}
        
               <p>
@@ -65,8 +65,8 @@ const Project = ({
           <div>
             <h4>Tech Stack Used</h4>
             <div className={` project-tech-stack ${style.techDiv}`}>
-              {techUsed.map((ele) => (
-                <p> {ele} </p>
+              {techUsed.map((ele,ind) => (
+                <p key={ind} >  {ele} </p>
               ))}
             </div>
           </div>

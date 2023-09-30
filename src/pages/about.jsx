@@ -5,9 +5,9 @@ import arjunImg from "./Images/avatar.jpg";
 import Button from "../components/button/button";
 import { useBreakpointValue } from "@chakra-ui/react";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import pdf from "./Images/Arjun_Dangi_Resume.pdf"
 
 const About = () => {
-  
   const variant = useBreakpointValue({
     base: true,
     md: false,
@@ -54,7 +54,7 @@ const About = () => {
         </div>
         <div className={`${style.rightDdiv}`}>
           <div>
-            <p className={`${style.my_desc}`} >
+            <p className={`${style.my_desc}`}>
               An enthusiastic Full Stack Web Developer with a strong set of
               technical as well as non-technical skills and a dedication towards
               creating useful and interactive web applications using MERN stack.
@@ -116,7 +116,6 @@ const About = () => {
                     <IoIosCheckmarkCircleOutline />
                   </span>{" "}
                   Adaptability
-                 
                 </p>{" "}
               </div>
               <div>
@@ -141,20 +140,22 @@ const About = () => {
               </div>
             </div>
 
-           
-            <div className={style.button_div} >
+            <div className={style.button_div}>
               <a
-              className="resume active me-5"
-              aria-current="page"
-              target="_blank"
-              href="https://drive.google.com/file/d/13xxj9DMgK6f80ft1GDMZatM5koyu8E8V/view?usp=sharing"
-            >
-              <Button text="Resume" id="resume-button-2" />
-           </a>
-               
-
+                className="resume "
+                aria-current="page"
+                
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/13xxj9DMgK6f80ft1GDMZatM5koyu8E8V/view?usp=sharing"
+                  )
+                }
+                download="Arjun Dangi Resume Pdf"
+                href={pdf}
+              >
+                <Button text="Resume" id="resume-button-2" />
+              </a>
             </div>
-            
           </div>
         </div>
       </div>
@@ -163,5 +164,4 @@ const About = () => {
 };
 
 export default About;
-
-
+// https://drive.google.com/file/d/13xxj9DMgK6f80ft1GDMZatM5koyu8E8V/view?usp=sharing

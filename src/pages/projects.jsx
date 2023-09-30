@@ -11,6 +11,7 @@ import { motion, Variants } from "framer-motion";
 
 const data = [
   {
+    id:1,
     title: "Travelious",
     subTitle: "A user specific travel booking website build in react",
     img1: travelImg,
@@ -23,6 +24,7 @@ const data = [
     preview:"https://travelious-project.netlify.app/"
   },
   {
+    id:2,
     title: "Myntra Clone",
     subTitle: "An E-Commerce website",
     img1: myntraImg,
@@ -35,6 +37,7 @@ const data = [
     preview:"https://gilded-vacherin-2e78d2.netlify.app/"
   },
   {
+    id:3,
     title: "Glossier Clone",
     subTitle: "An E-Commerce website",
     img1: glossierImg,
@@ -72,7 +75,7 @@ const Projects = () => {
         {/*  */}
         {
           data.map((ele,ind) => (
-            <Project {...ele} ind={ind}  />
+            <Project key={ele.id} {...ele} ind={ind}  />
           ))
        }
 
