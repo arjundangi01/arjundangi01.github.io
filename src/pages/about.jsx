@@ -144,7 +144,7 @@ const About = () => {
               <a
                 className="resume "
                 aria-current="page"
-                
+                id="resume-link-2"
                 onClick={() =>
                   window.open(
                     "https://drive.google.com/file/d/13xxj9DMgK6f80ft1GDMZatM5koyu8E8V/view?usp=sharing"

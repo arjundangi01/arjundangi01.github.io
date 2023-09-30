@@ -79,7 +79,7 @@ export default function Navbar() {
             </a>
             <a
               className="nav-link resume active me-5 text-info-emphasis"
-              
+              id="resume-link-1"
               onClick={() =>
                   window.open(
                     "https://drive.google.com/file/d/13xxj9DMgK6f80ft1GDMZatM5koyu8E8V/view?usp=sharing"
