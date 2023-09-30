@@ -34,7 +34,7 @@ const About = () => {
         className={"sectionHeading"}
         data-outline="ABOUT"
       >
-        ABOUT
+        About
       </motion.h2>
       <div className={`${style.container}`}>
         <div className={`${style.leftDiv}`}>
@@ -53,7 +53,7 @@ const About = () => {
           </motion.div>
         </div>
         <div className={`${style.rightDdiv}`}>
-          <div>
+          <div id="user-detail-intro" >
             <p className={`${style.my_desc}`}>
               An enthusiastic Full Stack Web Developer with a strong set of
               technical as well as non-technical skills and a dedication towards
