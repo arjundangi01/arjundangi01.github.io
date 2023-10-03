@@ -1,6 +1,6 @@
 // import "../styles/navbar.css";
 import style from "../styles/navbar.module.css";
-import pdf from "../pages/Images/Arjun_Dangi_Resume.pdf"
+import pdf from "../pages/Images/Arjun_Dangi_Resume.pdf";
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navSec  ">
@@ -38,7 +38,6 @@ export default function Navbar() {
               className="nav-link home active me-5 text-info-emphasis "
               aria-current="page"
               href="#home"
-
             >
               HOME
             </a>
@@ -80,13 +79,14 @@ export default function Navbar() {
             <a
               className="nav-link resume active me-5 text-info-emphasis"
               id="resume-link-1"
+              aria-current="page"
               onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/13xxj9DMgK6f80ft1GDMZatM5koyu8E8V/view?usp=sharing"
-                  )
-                }
-                download="Arjun Dangi Resume Pdf"
-                href={pdf}
+                window.open(
+                  "https://drive.google.com/file/d/13xxj9DMgK6f80ft1GDMZatM5koyu8E8V/view?usp=sharing"
+                )
+              }
+              download="Arjun Dangi Resume Pdf"
+              href={pdf}
             >
               <button id="resume-button-1" className={`${style.button}`}>
                 <span className={style.buttonContent}>Resume </span>

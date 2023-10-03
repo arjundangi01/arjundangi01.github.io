@@ -142,7 +142,7 @@ const About = () => {
 
             <div className={style.button_div}>
               <a
-                className="resume "
+                className="resume"
                 aria-current="page"
                 id="resume-link-2"
                 onClick={() =>

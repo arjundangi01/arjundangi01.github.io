@@ -49,6 +49,19 @@ const data = [
     git: "https://github.com/arjundangi01/Glossier-clone",
     preview:"https://celebrated-cendol-85db1c.netlify.app/"
   },
+  // {
+  //   id:4,
+  //   title: "Portfolio",
+  //   subTitle: "",
+  //   img1: glossierImg,
+  //   img2: gssImg,
+  //   desc: "",
+  //   techUsed: ["React", "CSS", "Bootstrap"],
+  //   features: [],
+  //   resp: "",
+  //   git: "https://github.com/arjundangi01/Glossier-clone",
+  //   preview:"https://celebrated-cendol-85db1c.netlify.app/"
+  // }
   
 ];
 
