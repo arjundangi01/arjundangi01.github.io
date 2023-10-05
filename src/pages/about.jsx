@@ -21,6 +21,14 @@ const About = () => {
       transition: { duration: 1 },
     },
   };
+  const containerAnimation = {
+    offscreen: { y: 40, opacity: 0 },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 1 },
+    },
+  };
 
   return (
     <div id="about" className={`about section ${style.about2}`}>
@@ -36,6 +44,11 @@ const About = () => {
       >
         About
       </motion.h2>
+      <motion.div
+                  initial={"offscreen"}
+                  whileInView={"onscreen"}
+                  variants={containerAnimation}
+                >
       <div className={`${style.container}`}>
         <div className={`${style.leftDiv}`}>
           {/* <img src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="" /> */}
@@ -67,9 +80,9 @@ const About = () => {
                   variants={textAnimate}
                 >
                   <h1>
-                    <span>1,200+</span>
+                    <span>10+</span>
                   </h1>
-                  <h2>Hours of Coding</h2>
+                  <h2>Mini Projects</h2>
                 </motion.div>
               </div>
               <div className={style.card}>
@@ -79,9 +92,9 @@ const About = () => {
                   variants={textAnimate}
                 >
                   <h1>
-                    <span>1,000+</span>
+                    <span>500+</span>
                   </h1>
-                  <h2>Hours of DSA</h2>
+                  <h2>DSA</h2>
                 </motion.div>
               </div>
               <div className={style.card}>
@@ -93,7 +106,7 @@ const About = () => {
                   <h1>
                     <span>3+</span>
                   </h1>
-                  <h2>Projects</h2>
+                  <h2>Team Projects</h2>
                 </motion.div>
               </div>
             </div>
@@ -158,7 +171,8 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+        </motion.div>
     </div>
   );
 };

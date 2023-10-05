@@ -10,6 +10,7 @@ const ImageAnimate = {
     viewport: { once: false, amount: 1 },
     transition: { duration: 2 },
   },
+  
 };
 const Project = ({
   title,

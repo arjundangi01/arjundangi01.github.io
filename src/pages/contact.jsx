@@ -26,9 +26,9 @@ const Contact = () => {
           initial={{ x: -60, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           // viewport={{ once: false, amount: 1 }}
-          // transition={{
-          //   duration: 0.5,
-          // }}
+          transition={{
+            delay: 0.1,
+          }}
         >
           <a href="https://github.com/arjundangi01" target="blank">
             <div id="contact-github" className={`${style.card}`}>
@@ -47,9 +47,9 @@ const Contact = () => {
           initial={{ x: -60, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           // viewport={{ once: false, amount: 1 }}
-          // transition={{
-          //   duration: 0.5,
-          // }}
+          transition={{
+            delay: 0.1,
+          }}
         >
           <a href="https://www.linkedin.com/in/arjun-dangi/" target="blank">
             <div id="contact-linkedin" className={`${style.card}`}>
@@ -68,11 +68,11 @@ const Contact = () => {
           initial={{ x: 60, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           // viewport={{ once: false, amount: 1 }}
-          // transition={{
-          //   duration: 0.5,
-          // }}
+          transition={{
+            delay: 0.1,
+          }}
         >
-        <a href="">
+        <a href="mailto:arjundangi907473@gmail.com">
           <div id="contact-email" className={`${style.card}`}>
             <div className={`${style.icon}`}>
               <AiOutlineMail />
@@ -89,9 +89,9 @@ const Contact = () => {
           initial={{ x: 60, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           // viewport={{ once: false, amount: 1 }}
-          // transition={{
-          //   duration: 0.5,
-          // }}
+          transition={{
+            delay: 0.1,
+          }}
         >
         <a href="">
           <div id="contact-phone" className={`${style.card}`}>
