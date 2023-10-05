@@ -135,7 +135,7 @@
     justify-content: center;
   }
   .button_div{
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
 }
 @media only screen and (min-width: 455px) and (max-width: 895px) {
@@ -181,7 +181,7 @@
     justify-content: center;
   }
   .button_div{
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
 }
 
@@ -230,7 +230,7 @@
     /* border: 1px solid #000; */
   }
   .button_div{
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
  
   .button_div{
@@ -245,7 +245,7 @@
 
   }
   .button_div{
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
 }
 @media only screen and (max-width: 300px) {
