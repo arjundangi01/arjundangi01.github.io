@@ -57,12 +57,12 @@ const data = [
     subTitle: "",
     img1: portfolio,
     img2: portfolio_small,
-    desc: "",
-    techUsed: ["React", "CSS", "Bootstrap"],
+    desc: "This is my portfolio built in react",
+    techUsed: ["React","Framer Motion","bootstrap"],
     features: [],
-    resp: "",
-    git: "https://github.com/arjundangi01/Glossier-clone",
-    preview:"https://celebrated-cendol-85db1c.netlify.app/"
+    resp: "Build the whole portfolio",
+    git: "https://github.com/arjundangi01/arjundangi01.github.io",
+    preview:"https://arjundangi01.github.io/"
   }
   
 ];

@@ -33,7 +33,7 @@ const Github = () => {
             alt=""
           />
         </div>
-        <div className={`${style.top}`}>
+        <div className={  `react-activity-calendar  ${style.top}`}>
           <div>
           {/* 1 lang */}
           
@@ -101,11 +101,7 @@ const Github = () => {
         </div>
         <div>
           {/* calendar */}
-          <img
-            className="react-activity-calendar"
-            src="http://ghchart.rshah.org/arjundangi01"
-            alt=""
-          />
+         
         </div>
       </div>
     </div>

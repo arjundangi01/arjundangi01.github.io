@@ -73,7 +73,10 @@ const Project = ({
           <div className={`${style.inner1}`}>
             <div className={` project-description ${style.description1}`}>
               <p>{desc}</p>
-              <p>Features :</p>
+              {
+                features.length >0 ? (<p>Features :</p>):("")
+              }
+              
               {features.map((ele, ind) => (
                 <li key={ind}> {ele} </li>
               ))}
