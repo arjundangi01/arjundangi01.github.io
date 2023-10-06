@@ -5,7 +5,8 @@
   /* margin-top: 25px; */
   /* border: 1px solid #332f2f; */
   display: flex;
-
+  width: 100%;
+  overflow: hidden;
   height: 100vh;
   padding: 4rem 0rem 8rem 0rem;
   background-color: #ffffff;
@@ -81,6 +82,8 @@
 @media only screen and (max-width: 455px) {
   .home {
     padding: 0;
+    padding: 0rem 0rem 0rem 0rem;
+
     /* border: 1px solid #000; */
   }
   .container {

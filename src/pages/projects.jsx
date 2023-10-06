@@ -7,6 +7,8 @@ import myntraImg from "./Images/myntra.png";
 import myntraS from "./Images/myntra small.png";
 import travelImg from "./Images/travelious.png";
 import travelS from "./Images/travelious s.png";
+import portfolio from "./Images/portfolio.png";
+import portfolio_small from "./Images/port f.png";
 import { motion, Variants } from "framer-motion";
 
 const data = [
@@ -49,19 +51,19 @@ const data = [
     git: "https://github.com/arjundangi01/Glossier-clone",
     preview:"https://celebrated-cendol-85db1c.netlify.app/"
   },
-  // {
-  //   id:4,
-  //   title: "Portfolio",
-  //   subTitle: "",
-  //   img1: glossierImg,
-  //   img2: gssImg,
-  //   desc: "",
-  //   techUsed: ["React", "CSS", "Bootstrap"],
-  //   features: [],
-  //   resp: "",
-  //   git: "https://github.com/arjundangi01/Glossier-clone",
-  //   preview:"https://celebrated-cendol-85db1c.netlify.app/"
-  // }
+  {
+    id:4,
+    title: "Portfolio",
+    subTitle: "",
+    img1: portfolio,
+    img2: portfolio_small,
+    desc: "",
+    techUsed: ["React", "CSS", "Bootstrap"],
+    features: [],
+    resp: "",
+    git: "https://github.com/arjundangi01/Glossier-clone",
+    preview:"https://celebrated-cendol-85db1c.netlify.app/"
+  }
   
 ];
 

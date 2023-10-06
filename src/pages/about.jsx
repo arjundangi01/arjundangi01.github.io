@@ -40,7 +40,7 @@ const About = () => {
           duration: 0.5,
         }}
         className={"sectionHeading"}
-        data-outline="ABOUT"
+        data-outline="About"
       >
         About
       </motion.h2>
