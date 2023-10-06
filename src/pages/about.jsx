@@ -69,7 +69,7 @@ const About = () => {
           <div id="user-detail-intro" >
             <p className={`${style.my_desc}`}>
               An enthusiastic Full Stack Web Developer with a strong set of
-              technical as well as non-technical skills and a dedication towards
+              technical skills like  HTML, CSS, Javascript, React and nodeJs as well as non-technical skills and a dedication towards
               creating useful and interactive web applications using MERN stack.
             </p>
             <div className={style.card_container}>
