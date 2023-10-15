@@ -160,7 +160,7 @@ const About = () => {
                 id="resume-link-2"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/13xxj9DMgK6f80ft1GDMZatM5koyu8E8V/view?usp=sharing"
+                    "https://drive.google.com/file/d/1OhQGe_iQEt4X11hHUsRh1-5yJ7Wm43Cj/view?usp=sharing"
                   )
                 }
                 download="Arjun Dangi Resume Pdf"
