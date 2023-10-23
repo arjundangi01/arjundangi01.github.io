@@ -13,20 +13,35 @@ import { motion, Variants } from "framer-motion";
 
 const data = [
   {
-    id:1,
+    id: 1,
     title: "Travelious",
-    subTitle: "A user specific travel booking website build in react",
+    subTitle: "A Full Stack travel booking website",
     img1: travelImg,
     img2: travelS,
     desc: "Build a travel website in 7 days along with a team of 5 members.",
-    techUsed: ["React", "Routing", "JavaScript", "Redux","API","auth0"],
-    features: ["Login", "Signup", "Booking History and update facility" , "Profile Page", "Checkout Page"],
-    resp: " Integrated auth0 and developed the profile page, tour detail page and, navbar",
+    techUsed: [
+      "Node js",
+      "Express",
+      "MongoDB",
+      "React",
+      "Routing",
+      "Redux",
+      "Chakra-UI",
+    ],
+    features: [
+      "Login",
+      "Signup",
+      "Tour Page",
+      "Booking History and update facility",
+      "Profile Page",
+      "Payment Page",
+    ],
+    resp: "Build Tour API along with sort and filter functionality and worked on connecting the frontend with the backend. I also contributed to the creation of the profile page, tour detail page, and, navbar",
     git: "https://github.com/arjundangi01/Travelious",
-    preview:"https://travelious-project.netlify.app/"
+    preview: "https://travelious-project.netlify.app/",
   },
   {
-    id:2,
+    id: 2,
     title: "Myntra Clone",
     subTitle: "An E-Commerce website",
     img1: myntraImg,
@@ -36,38 +51,43 @@ const data = [
     features: ["Login", "Signup", "Cart Page", "Checkout Page"],
     resp: "Developed the product page(Men's T-shirt), product's static pages, cart page and wishlist page",
     git: "https://github.com/arjundangi01/Myntra-Clone",
-    preview:"https://gilded-vacherin-2e78d2.netlify.app/"
+    preview: "https://gilded-vacherin-2e78d2.netlify.app/",
   },
   {
-    id:3,
+    id: 3,
     title: "Glossier Clone",
     subTitle: "An E-Commerce website",
     img1: glossierImg,
     img2: gssImg,
     desc: "Build  Glossier.com in 7 days along with a team of 4 members.",
-    techUsed: ["HTML", "CSS", "JavaScript", "Local Storage","API"],
+    techUsed: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JSON-server",
+      "Local Storage",
+      "API",
+    ],
     features: ["Login", "Signup", "Cart Page", "Checkout Page"],
     resp: "Developed the navbar, product page and cart page",
     git: "https://github.com/arjundangi01/Glossier-clone",
-    preview:"https://celebrated-cendol-85db1c.netlify.app/"
+    preview: "https://celebrated-cendol-85db1c.netlify.app/",
   },
   {
-    id:4,
+    id: 4,
     title: "Portfolio",
-    subTitle: "",
+    subTitle:
+      "My React portfolio showcases my projects, skills, and experiences.",
     img1: portfolio,
     img2: portfolio_small,
-    desc: "This is my portfolio built in react",
-    techUsed: ["React","Framer Motion","bootstrap"],
+    desc: "Explore my work, from web apps to design projects, to get a glimpse of my abilities and passion for creating user-friendly interfaces.",
+    techUsed: ["React", "Framer Motion", "Bootstrap"],
     features: [],
     resp: "Build the whole portfolio",
     git: "https://github.com/arjundangi01/arjundangi01.github.io",
-    preview:"https://arjundangi01.github.io/"
-  }
-  
+    preview: "https://arjundangi01.github.io/",
+  },
 ];
-
-
 
 const Projects = () => {
   return (
@@ -85,14 +105,10 @@ const Projects = () => {
         PROJECTS
       </motion.h2>
       <div className={` ${style.container}`}>
-       
-
         {/*  */}
-        {
-          data.map((ele,ind) => (
-            <Project key={ele.id} {...ele} ind={ind}  />
-          ))
-       }
+        {data.map((ele, ind) => (
+          <Project key={ele.id} {...ele} ind={ind} />
+        ))}
 
         {/*  */}
       </div>

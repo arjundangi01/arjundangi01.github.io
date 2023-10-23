@@ -81,7 +81,7 @@ const Project = ({
                 <li key={ind}> {ele} </li>
               ))}
 
-              <p>Area of Responsibility :{resp}</p>
+              <p>Area of Responsibility : {resp}</p>
             </div>
           </div>
           <div>

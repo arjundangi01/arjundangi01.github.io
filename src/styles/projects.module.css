@@ -146,7 +146,9 @@
 }
 .techDiv {
   display: flex;
-  gap: 1rem;
+  gap: 0rem 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 .techDiv p {
   border: 1px solid #3332327e;
@@ -280,7 +282,7 @@
     width: 90%;
   }
   .techDiv {
-    justify-content: center;
+    
     /* border: 1px solid #000; */
   }
   .deskImgDiv {

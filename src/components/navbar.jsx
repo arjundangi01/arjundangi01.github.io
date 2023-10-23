@@ -82,7 +82,7 @@ export default function Navbar() {
               aria-current="page"
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1OhQGe_iQEt4X11hHUsRh1-5yJ7Wm43Cj/view?usp=sharing"
+                  "https://drive.google.com/file/d/1OR_RtLKEqfbX0eyCz5Sefdu5hKoHoH2u/view?usp=sharing"
                 )
               }
               download="Arjun Dangi Resume Pdf"
