@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.fb64425a.css",
-    "main.js": "/static/js/main.f2ed2533.js",
+    "main.js": "/static/js/main.166bf73e.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/myntra.png": "/static/media/myntra.17b86a034de4f514b625.png",
     "static/media/travelious.png": "/static/media/travelious.913c425dce3a1f6c7808.png",
     "static/media/gloosier.png": "/static/media/gloosier.5cb48a6c8852a89d011e.png",
     "static/media/myntra small.png": "/static/media/myntra small.5d2e3d4ecfa8f078b78b.png",
-    "static/media/Arjun_Dangi_Resume.pdf": "/static/media/Arjun_Dangi_Resume.234f9404a41b593d2aa4.pdf",
+    "static/media/Arjun_Dangi_Resume.pdf": "/static/media/Arjun_Dangi_Resume.c1842e05cf0538683e0d.pdf",
     "static/media/medium .png": "/static/media/medium .3c692801690df0c17fe8.png",
     "static/media/portfolio.png": "/static/media/portfolio.346fadb16812865ec065.png",
     "static/media/gloosier s.png": "/static/media/gloosier s.e82b13e8d289537eb737.png",
@@ -28,11 +28,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.fb64425a.css.map": "/static/css/main.fb64425a.css.map",
-    "main.f2ed2533.js.map": "/static/js/main.f2ed2533.js.map",
+    "main.166bf73e.js.map": "/static/js/main.166bf73e.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb64425a.css",
-    "static/js/main.f2ed2533.js"
+    "static/js/main.166bf73e.js"
   ]
 }
