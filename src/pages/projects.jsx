@@ -55,6 +55,7 @@ const data = [
     resp: "Personal MERN stack project, an individual effort",
     git: "https://github.com/arjundangi01/Medium-clone",
     preview: "https://comforting-taffy-d07f72.netlify.app/",
+    
   },
   {
     id: 3,
