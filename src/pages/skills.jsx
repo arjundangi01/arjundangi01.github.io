@@ -12,7 +12,8 @@ import mongoJSImg from "./Images/mongo.png";
 import expressImg from "./Images/express.png";
 import tailwind from "./Images/tailwind.jpg"
 import { motion, Variants } from "framer-motion";
-// -
+// --
+//--
 const Skills = () => {
   const jsImg =
     "https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"
