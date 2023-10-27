@@ -7,8 +7,11 @@ import myntraImg from "./Images/myntra.png";
 import myntraS from "./Images/myntra small.png";
 import travelImg from "./Images/travelious.png";
 import travelS from "./Images/travelious s.png";
+import medium from "./Images/medium .png";
+import mediumS from "./Images/medium_s.png";
 import portfolio from "./Images/portfolio.png";
 import portfolio_small from "./Images/port f.png";
+
 import { motion, Variants } from "framer-motion";
 
 const data = [
@@ -42,6 +45,19 @@ const data = [
   },
   {
     id: 2,
+    title: "Medium Clone",
+    subTitle: "Medium clone using MERN stack for creating and sharing articles.",
+    img1: medium,
+    img2: mediumS,
+    desc: "I developed a Medium clone using the MERN stack. Demonstrating my skills in web development and full-stack programming.",
+    techUsed: ["React","Javascript", "Tailwind", "Node", "Express","MongoDB"],
+    features: [ "Create Blog", "Update Blog","Follow User","Comment on BLog"],
+    resp: "Personal MERN stack project, an individual effort",
+    git: "https://github.com/arjundangi01/Medium-clone",
+    preview: "https://comforting-taffy-d07f72.netlify.app/",
+  },
+  {
+    id: 3,
     title: "Myntra Clone",
     subTitle: "An E-Commerce website",
     img1: myntraImg,
@@ -54,7 +70,7 @@ const data = [
     preview: "https://gilded-vacherin-2e78d2.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Glossier Clone",
     subTitle: "An E-Commerce website",
     img1: glossierImg,
@@ -73,20 +89,7 @@ const data = [
     git: "https://github.com/arjundangi01/Glossier-clone",
     preview: "https://celebrated-cendol-85db1c.netlify.app/",
   },
-  {
-    id: 4,
-    title: "Portfolio",
-    subTitle:
-      "My React portfolio showcases my projects, skills, and experiences.",
-    img1: portfolio,
-    img2: portfolio_small,
-    desc: "Explore my work, from web apps to design projects, to get a glimpse of my abilities and passion for creating user-friendly interfaces.",
-    techUsed: ["React", "Framer Motion", "Bootstrap"],
-    features: [],
-    resp: "Build the whole portfolio",
-    git: "https://github.com/arjundangi01/arjundangi01.github.io",
-    preview: "https://arjundangi01.github.io/",
-  },
+  
 ];
 
 const Projects = () => {
