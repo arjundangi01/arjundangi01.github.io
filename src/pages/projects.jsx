@@ -50,7 +50,7 @@ const data = [
     img1: medium,
     img2: mediumS,
     desc: "I developed a Medium clone using the MERN stack. Demonstrating my skills in web development and full-stack programming.",
-    techUsed: ["React","Javascript", "Tailwind", "Node", "Express","MongoDB"],
+    techUsed: ["React","Redux","Javascript", "Tailwind", "Node", "Express","MongoDB"],
     features: [ "Create Blog", "Update Blog","Follow User","Comment on BLog"],
     resp: "Personal MERN stack project, an individual effort",
     git: "https://github.com/arjundangi01/Medium-clone",
@@ -73,7 +73,7 @@ const data = [
   {
     id: 4,
     title: "Glossier Clone",
-    subTitle: "An E-Commerce website",
+    subTitle: "An E-Commerce website for women's beauty products",
     img1: glossierImg,
     img2: gssImg,
     desc: "Build  Glossier.com in 7 days along with a team of 4 members.",

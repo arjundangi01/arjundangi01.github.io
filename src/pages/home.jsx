@@ -15,6 +15,7 @@ const Home = () => {
     md: false,
     lg: false,
   });
+
   const textAnimate = {
     offscreen: variant ? { x: 0, opacity: 0 } : { x: -100, opacity: 0 },
     onscreen: {
@@ -23,6 +24,7 @@ const Home = () => {
       transition: { duration: 2 },
     },
   };
+  // hello world
   return (
     <div id="home" className={style.home}>
       
