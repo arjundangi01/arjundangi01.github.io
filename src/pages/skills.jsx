@@ -11,6 +11,8 @@ import nodeJSImg from "./Images/nodejs.png";
 import mongoJSImg from "./Images/mongo.png";
 import expressImg from "./Images/express.png";
 import tailwind from "./Images/tailwind.jpg"
+import typescript from "./Images/typescriptImg.jpg"
+
 import { motion, Variants } from "framer-motion";
 // --
 //--
@@ -54,7 +56,7 @@ const Skills = () => {
           <Skill img={jsImg} name={"JS"} />
           <Skill img={javaImg} name={"JAVA"} />
           <Skill img={reactImg} name={"React"} />
-          <Skill img={routerImg} name={"Router"} />
+          <Skill img={typescript} name={"TS"} />
           <Skill img={reduxImg} name={"Redux"} />
           <Skill img={nodeJSImg} name={"Node Js"} />
           <Skill img={mongoJSImg} name={"Mongo"} />
