@@ -9,6 +9,9 @@ import travelImg from "./Images/travelious.png";
 import travelS from "./Images/travelious s.png";
 import medium from "./Images/medium .png";
 import mediumS from "./Images/medium_s.png";
+import instagramImg from "./Images/instagram.png";
+import instagramSImg from "./Images/instagram_s.png";
+import instagramSImg2 from "./Images/insta.png";
 import portfolio from "./Images/portfolio.png";
 import portfolio_small from "./Images/port f.png";
 
@@ -44,21 +47,53 @@ const data = [
     preview: "https://travelious-project.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
+    title: "Instagram Clone",
+    subTitle:
+      "A fully-featured Instagram clone built with MERN stack.",
+    img1: instagramImg,
+    img2: instagramSImg,
+    desc: "Team of three crafted a simple, user-friendly Instagram clone for a seamless social experience",
+    techUsed: [
+      "React",
+      "Redux",
+      "Typescript",
+      "Javascript",
+      "Chakra-UI",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Socket",
+    ],
+    features: ["Create Post", "Chat", "Follow User", "Comment and Like"],
+    resp: "Contributed on profile page, follow and Unfollow functionality. Contributed to post route and follower routes in backend",
+    git: "https://github.com/arjundangi01/Instagram-Clone",
+    preview: "https://instaclonevi.netlify.app/",
+  },
+  {
+    id: 4,
     title: "Medium Clone",
-    subTitle: "Medium clone using MERN stack for creating and sharing articles.",
+    subTitle:
+      "Individual project:  built a seamless Medium clone using MERN stack.",
     img1: medium,
     img2: mediumS,
     desc: "I developed a Medium clone using the MERN stack. Demonstrating my skills in web development and full-stack programming.",
-    techUsed: ["React","Redux","Javascript", "Tailwind", "Node", "Express","MongoDB"],
-    features: [ "Create Blog", "Update Blog","Follow User","Comment on BLog"],
-    resp: "Personal MERN stack project, an individual effort",
+    techUsed: [
+      "React",
+      "Redux",
+      "Javascript",
+      "Tailwind",
+      "Node",
+      "Express",
+      "MongoDB",
+    ],
+    features: ["Create Blog", "Update Blog", "Follow User", "Comment on BLog"],
+    resp: "Independently created: Managed all aspects of the project",
     git: "https://github.com/arjundangi01/Medium-clone",
     preview: "https://comforting-taffy-d07f72.netlify.app/",
-    
   },
   {
-    id: 3,
+    id: 5,
     title: "Myntra Clone",
     subTitle: "An E-Commerce website",
     img1: myntraImg,
@@ -71,7 +106,7 @@ const data = [
     preview: "https://gilded-vacherin-2e78d2.netlify.app/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Glossier Clone",
     subTitle: "An E-Commerce website for women's beauty products",
     img1: glossierImg,
@@ -90,7 +125,6 @@ const data = [
     git: "https://github.com/arjundangi01/Glossier-clone",
     preview: "https://celebrated-cendol-85db1c.netlify.app/",
   },
-  
 ];
 
 const Projects = () => {
