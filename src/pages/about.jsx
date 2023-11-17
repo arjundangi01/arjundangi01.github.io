@@ -5,7 +5,7 @@ import arjunImg from "./Images/avatar.jpg";
 import Button from "../components/button/button";
 import { useBreakpointValue } from "@chakra-ui/react";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import pdf from "./Images/Arjun_Dangi_Resume.pdf"
+import pdf from "./Images/Arjun-Dangi-Resume.pdf"
 
 const About = () => {
   const variant = useBreakpointValue({
@@ -160,7 +160,7 @@ const About = () => {
                 id="resume-link-2"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1OR_RtLKEqfbX0eyCz5Sefdu5hKoHoH2u/view?usp=sharing"
+                    "https://drive.google.com/file/d/1bFjFGaZ4Vyu4AZ9ErVE4YVr9dDUjc72I/view?usp=sharing"
                   )
                 }
                 download="Arjun Dangi Resume Pdf"

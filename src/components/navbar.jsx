@@ -1,6 +1,6 @@
 // import "../styles/navbar.css";
 import style from "../styles/navbar.module.css";
-import pdf from "../pages/Images/Arjun_Dangi_Resume.pdf";
+import pdf from "../pages/Images/Arjun-Dangi-Resume.pdf";
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navSec ps-xl-0 ">
@@ -82,7 +82,7 @@ export default function Navbar() {
               aria-current="page"
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1OR_RtLKEqfbX0eyCz5Sefdu5hKoHoH2u/view?usp=sharing"
+                  "https://drive.google.com/file/d/1bFjFGaZ4Vyu4AZ9ErVE4YVr9dDUjc72I/view?usp=sharing"
                 )
               }
               download="Arjun Dangi Resume Pdf"
