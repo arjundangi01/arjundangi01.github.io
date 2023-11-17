@@ -42,7 +42,7 @@ const data = [
       "Profile Page",
       "Payment Page",
     ],
-    resp: "Build Tour API along with sort and filter functionality and worked on connecting the frontend with the backend. I also contributed to the creation of the profile page, tour detail page, and, navbar",
+    resp: "Independently Managed all aspects of the backend. In frontend, I contributed to the creation of the tour detail page, navbar, and profile page having user booking history.",
     git: "https://github.com/arjundangi01/Travelious",
     preview: "https://travelious-project.netlify.app/",
   },
