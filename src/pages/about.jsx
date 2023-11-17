@@ -163,7 +163,7 @@ const About = () => {
                     "https://drive.google.com/file/d/1bFjFGaZ4Vyu4AZ9ErVE4YVr9dDUjc72I/view?usp=sharing"
                   )
                 }
-                download="Arjun Dangi Resume Pdf"
+                download="Arjun-Dangi-Resume"
                 href={pdf}
               >
                 <Button text="Resume" id="resume-button-2" />

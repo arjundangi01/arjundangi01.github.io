@@ -85,7 +85,7 @@ export default function Navbar() {
                   "https://drive.google.com/file/d/1bFjFGaZ4Vyu4AZ9ErVE4YVr9dDUjc72I/view?usp=sharing"
                 )
               }
-              download="Arjun Dangi Resume Pdf"
+              download="Arjun-Dangi-Resume"
               href={pdf}
             >
               <button id="resume-button-1"  className={`${style.button} ms-5`}>
