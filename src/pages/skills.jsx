@@ -11,7 +11,9 @@ import nodeJSImg from "./Images/nodejs.png";
 import mongoJSImg from "./Images/mongo.png";
 import expressImg from "./Images/express.png";
 import tailwind from "./Images/tailwind.jpg"
+import socket_io from './Images/socket io.png'
 import typescript from "./Images/typescriptImg.jpg"
+import nextJs from "./Images/nextjs.webp"
 
 import { motion, Variants } from "framer-motion";
 // --
@@ -55,14 +57,17 @@ const Skills = () => {
           <Skill img={cssImg} name={"CSS"} />
           <Skill img={jsImg} name={"JS"} />
           <Skill img={javaImg} name={"JAVA"} />
-          <Skill img={reactImg} name={"React"} />
           <Skill img={typescript} name={"TS"} />
+          <Skill img={reactImg} name={"React"} />
+          <Skill img={nextJs} name={"Next Js"} />
+          <Skill img={routerImg} name={"Router"} />
           <Skill img={reduxImg} name={"Redux"} />
+          <Skill img={tailwind} name={"Tailwind"} />
+          <Skill img={chakraImg} name={"Chakra UI"} />
           <Skill img={nodeJSImg} name={"Node Js"} />
           <Skill img={mongoJSImg} name={"Mongo"} />
           <Skill img={expressImg} name={"Express"} />
-          <Skill img={chakraImg} name={"Chakra UI"} />
-          <Skill img={tailwind} name={"Tailwind"} />
+          <Skill img={socket_io} name={"socket"} />
         </div>
       </motion.div>
     </div>

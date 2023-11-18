@@ -11,6 +11,8 @@ import medium from "./Images/medium .png";
 import mediumS from "./Images/medium_s.png";
 import instagramImg from "./Images/instagram.png";
 import instagramSImg from "./Images/instagram_s.png";
+import chatImg from './Images/chatapp.png'
+import chatImgS from './Images/chat_app_s.png'
 import instagramSImg2 from "./Images/insta.png";
 import portfolio from "./Images/portfolio.png";
 import portfolio_small from "./Images/port f.png";
@@ -47,7 +49,7 @@ const data = [
     preview: "https://travelious-project.netlify.app/",
   },
   {
-    id: 3,
+    id: 2,
     title: "Instagram Clone",
     subTitle:
       "A fully-featured Instagram clone built with MERN stack.",
@@ -65,10 +67,33 @@ const data = [
       "MongoDB",
       "Socket",
     ],
-    features: ["Create Post", "Chat", "Follow User", "Comment and Like"],
+    features: [ "Login Signup", "Create Post", "Chat", "Follow User", "Comment and Like"],
     resp: "Contributed on profile page, follow and Unfollow functionality. Contributed to post route and follower routes in backend",
     git: "https://github.com/arjundangi01/Instagram-Clone",
     preview: "https://instaclonevi.netlify.app/",
+  },
+  {
+    id: 3,
+    title: "Chat App",
+    subTitle:
+      "A real-time chat application",
+    img1: chatImg,
+    img2: chatImgS,
+    desc: "Team of three crafted a simple, user-friendly Instagram clone for a seamless social experience",
+    techUsed: [
+      "NextJs",
+      "Redux",
+      "Typescript",  
+      "Tailwind Css",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Socket",
+    ],
+    features: ["Login Signup", "Unlimited Chat", "Search User", ],
+    resp: "Independently created: Managed all aspects of the project",
+    git: "https://github.com/arjundangi01/Chat-App",
+    preview: "https://elaborate-shortbread-8d0fc5.netlify.app/",
   },
   {
     id: 4,
