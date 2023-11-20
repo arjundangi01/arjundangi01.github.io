@@ -76,10 +76,10 @@ const data = [
     id: 3,
     title: "Chat App",
     subTitle:
-      "A real-time chat application",
+      "A chat application built with Next Js",
     img1: chatImg,
     img2: chatImgS,
-    desc: "Team of three crafted a simple, user-friendly Instagram clone for a seamless social experience",
+    desc: "I developed a real-time chat application for unlimited chat",
     techUsed: [
       "NextJs",
       "Redux",
