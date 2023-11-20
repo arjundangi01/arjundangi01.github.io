@@ -9,7 +9,7 @@ export default function Navbar() {
         className={`container-fluid fixed-top pe-2 ps-2 pe-sm-5 ps-sm-5 ps-md-5  ps-lg-0 ps-xl-5   pe-md-5  pe-lg-0 pe-xl-5 pt-1 pb-1 ${style.nav_menu}`}
       >
         <a className="navbar-brand d-flex ms-lg-5 ms-md-0  align-items-center  " href="#">
-          <span className={style.span}>A</span>rjun{" "}
+          <span className={style.span}>A</span>rjun{""}
           <span>
             <img
               className="ms-lg-2 ms-md-2 ms-2 "
