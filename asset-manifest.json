@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.462dbf77.css",
-    "main.js": "/static/js/main.257b29d6.js",
+    "main.js": "/static/js/main.9ea60f52.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/myntra.png": "/static/media/myntra.17b86a034de4f514b625.png",
+    "static/media/auction.png": "/static/media/auction.ab92039b3a552bff6fc5.png",
     "static/media/travelious.png": "/static/media/travelious.913c425dce3a1f6c7808.png",
     "static/media/gloosier.png": "/static/media/gloosier.5cb48a6c8852a89d011e.png",
     "static/media/myntra small.png": "/static/media/myntra small.5d2e3d4ecfa8f078b78b.png",
@@ -13,6 +14,7 @@
     "static/media/gloosier s.png": "/static/media/gloosier s.e82b13e8d289537eb737.png",
     "static/media/travelious s.png": "/static/media/travelious s.bcad16f2ac7de91d886b.png",
     "static/media/chatapp.png": "/static/media/chatapp.f58d433ad98ebd423d04.png",
+    "static/media/auction_s.png": "/static/media/auction_s.3954b4ba1098d3936d30.png",
     "static/media/Arjun-Dangi-Resume.pdf": "/static/media/Arjun-Dangi-Resume.7156249e46647818c543.pdf",
     "static/media/insta.png": "/static/media/insta.43008e0e27b235db7abc.png",
     "static/media/java.png": "/static/media/java.a8fdeb516585a40843a1.png",
@@ -36,11 +38,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.462dbf77.css.map": "/static/css/main.462dbf77.css.map",
-    "main.257b29d6.js.map": "/static/js/main.257b29d6.js.map",
+    "main.9ea60f52.js.map": "/static/js/main.9ea60f52.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.462dbf77.css",
-    "static/js/main.257b29d6.js"
+    "static/js/main.9ea60f52.js"
   ]
 }
