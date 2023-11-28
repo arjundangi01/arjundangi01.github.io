@@ -82,7 +82,7 @@ const About = () => {
                   <h1>
                     <span>10+</span>
                   </h1>
-                  <h2>Mini Projects</h2>
+                  <h2>Solo Projects</h2>
                 </motion.div>
               </div>
               <div className={style.card}>
