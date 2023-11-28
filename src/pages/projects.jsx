@@ -16,6 +16,8 @@ import chatImgS from './Images/chat_app_s.png'
 import instagramSImg2 from "./Images/insta.png";
 import portfolio from "./Images/portfolio.png";
 import portfolio_small from "./Images/port f.png";
+import auctionImg from './Images/auction.png'
+import auctionSImg from './Images/auction_s.png'
 
 import { motion, Variants } from "framer-motion";
 
@@ -74,6 +76,29 @@ const data = [
   },
   {
     id: 3,
+    title: "Auction Website",
+    subTitle:
+      "MERN-based auction platform with real-time bidding.",
+    img1: auctionImg,
+    img2: auctionSImg,
+    desc: "I developed a full-stack auction site with MERN stack and socket-io. Introducing real-time bids and user-friendly navigation, ensuring a seamless and feature-rich experience. ",
+    techUsed: [
+      "React",
+      "Redux",   
+      "Javascript",
+      "Tailwind Css",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Socket",
+    ],
+    features: ["Login Signup", "Sell Product","Purchase Product","Place a Bid", "Search Product", ],
+    resp: "Independently created: Managed all aspects of the project",
+    git: "https://github.com/arjundangi01/Auction-Website",
+    preview: "https://subtle-cupcake-2e83a9.netlify.app/",
+  },
+  {
+    id: 4,
     title: "Chat App",
     subTitle:
       "A chat application built with Next Js",
@@ -96,7 +121,7 @@ const data = [
     preview: "https://elaborate-shortbread-8d0fc5.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Medium Clone",
     subTitle:
       "Individual project:  built a seamless Medium clone using MERN stack.",
@@ -118,7 +143,7 @@ const data = [
     preview: "https://comforting-taffy-d07f72.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Myntra Clone",
     subTitle: "An E-Commerce website",
     img1: myntraImg,
@@ -131,7 +156,7 @@ const data = [
     preview: "https://gilded-vacherin-2e78d2.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Glossier Clone",
     subTitle: "An E-Commerce website for women's beauty products",
     img1: glossierImg,
