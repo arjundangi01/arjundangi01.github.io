@@ -18,6 +18,8 @@ import portfolio from "./Images/portfolio.png";
 import portfolio_small from "./Images/port f.png";
 import auctionImg from './Images/auction.png'
 import auctionSImg from './Images/auction_s.png'
+import aiPlatform from './Images/ai_platfrom.png'
+import aiPlatformS from './Images/ai_platform_s.png'
 
 import { motion, Variants } from "framer-motion";
 
@@ -52,6 +54,28 @@ const data = [
   },
   {
     id: 2,
+    title: "AI Platform",
+    subTitle:
+      "A AI Platform in this Next.js and Tailwind.",
+    img1: aiPlatform,
+    img2: aiPlatformS,
+    desc: "Explore the power of AI in this platform. Engage in conversations, generate images from prompts, and get code snippets.",
+    techUsed: [
+      "Next JS",
+        "Typescript",
+      "Javascript",
+      "OpenAI API",
+      "Clerk"
+    ],
+    features: ["Login Signup", "Engage in conversations with the AI for quick and insightful answers.",
+      "Generate images by providing prompts",
+      "Need code? Simply ask, and it'll provide you with code snippets.", ],
+    resp: "Independently created: Managed all aspects of the project",
+    git: "https://github.com/arjundangi01/AI-Platfrom",
+    preview: "https://ai-platfrom.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Instagram Clone",
     subTitle:
       "A fully-featured Instagram clone built with MERN stack.",
@@ -75,7 +99,7 @@ const data = [
     preview: "https://instaclonevi.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Auction Website",
     subTitle:
       "MERN-based auction platform with real-time bidding.",
@@ -98,7 +122,7 @@ const data = [
     preview: "https://subtle-cupcake-2e83a9.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Chat App",
     subTitle:
       "A chat application built with Next Js",
@@ -121,7 +145,7 @@ const data = [
     preview: "https://elaborate-shortbread-8d0fc5.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Medium Clone",
     subTitle:
       "Individual project:  built a seamless Medium clone using MERN stack.",
@@ -143,7 +167,7 @@ const data = [
     preview: "https://comforting-taffy-d07f72.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Myntra Clone",
     subTitle: "An E-Commerce website",
     img1: myntraImg,
@@ -156,7 +180,7 @@ const data = [
     preview: "https://gilded-vacherin-2e78d2.netlify.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Glossier Clone",
     subTitle: "An E-Commerce website for women's beauty products",
     img1: glossierImg,
