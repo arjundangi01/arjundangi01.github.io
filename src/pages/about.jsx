@@ -9,6 +9,7 @@ import pdf from "./Images/Arjun-Dangi-Resume.pdf"
 
 const About = () => {
   // -
+  // -
   const variant = useBreakpointValue({
     base: true,
     md: false,
