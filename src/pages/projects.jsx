@@ -30,7 +30,7 @@ const data = [
     subTitle: "A Full Stack travel booking website",
     img1: travelImg,
     img2: travelS,
-    desc: "Build a travel website in 7 days along with a team of 5 members.",
+    desc: "Constructed a robust travel booking platform with MERN stack, featuring secure user authentication, tour search, booking capabilities and secure payments. Users can access their profiles showcasing booking history and effortlessly cancel reservations.",
     techUsed: [
       "Node js",
       "Express",
