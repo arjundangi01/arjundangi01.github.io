@@ -94,7 +94,7 @@ const data = [
       "Socket",
     ],
     features: [ "Login Signup", "Create Post", "Chat", "Follow User", "Comment and Like"],
-    resp: "Contributed on profile page, follow and Unfollow functionality. Contributed to post route and follower routes in backend",
+    resp: "Contributed on profile page, Follow and Unfollow functionality. Contributed to post route and follower routes in backend",
     git: "https://github.com/arjundangi01/Instagram-Clone",
     preview: "https://instaclonevi.netlify.app/",
   },
