@@ -11,15 +11,15 @@ import medium from "./Images/medium .png";
 import mediumS from "./Images/medium_s.png";
 import instagramImg from "./Images/instagram.png";
 import instagramSImg from "./Images/instagram_s.png";
-import chatImg from './Images/chatapp.png'
-import chatImgS from './Images/chat_app_s.png'
+import chatImg from "./Images/chatapp.png";
+import chatImgS from "./Images/chat_app_s.png";
 import instagramSImg2 from "./Images/insta.png";
 import portfolio from "./Images/portfolio.png";
 import portfolio_small from "./Images/port f.png";
-import auctionImg from './Images/auction.png'
-import auctionSImg from './Images/auction_s.png'
-import aiPlatform from './Images/ai_platfrom.png'
-import aiPlatformS from './Images/ai_platform_s.png'
+import auctionImg from "./Images/auction.png";
+import auctionSImg from "./Images/auction_s.png";
+import aiPlatform from "./Images/ai_platfrom.png";
+import aiPlatformS from "./Images/ai_platform_s.png";
 
 import { motion, Variants } from "framer-motion";
 
@@ -55,21 +55,18 @@ const data = [
   {
     id: 2,
     title: "AI Platform",
-    subTitle:
-      "A AI Platform in this Next.js and Tailwind.",
+    subTitle: "A AI Platform in this Next.js and Tailwind.",
     img1: aiPlatform,
     img2: aiPlatformS,
     desc: "Explore the power of AI in this platform. Engage in conversations, generate images from prompts, and get code snippets.",
-    techUsed: [
-      "Next JS",
-        "Typescript",
-      "Javascript",
-      "OpenAI API",
-      "Clerk"
-    ],
-    features: ["Login Signup", "Engage in conversations with the AI for quick and insightful answers.",
+    techUsed: ["Next JS", "Typescript", "Javascript", "OpenAI API", "Clerk"],
+    features: [
+      "Login Signup",
+      "User Authentication",
+      "Engage in conversations with the AI for quick and insightful answers.",
       "Generate images by providing prompts",
-      "Need code? Simply ask, and it'll provide you with code snippets.", ],
+      "Need code? Simply ask, and it'll provide you with code snippets.",
+    ],
     resp: "Independently created: Managed all aspects of the project",
     git: "https://github.com/arjundangi01/AI-Platfrom",
     preview: "https://ai-platfrom.vercel.app/",
@@ -77,8 +74,7 @@ const data = [
   {
     id: 3,
     title: "Instagram Clone",
-    subTitle:
-      "A fully-featured Instagram clone built with MERN stack.",
+    subTitle: "A fully-featured Instagram clone built with MERN stack.",
     img1: instagramImg,
     img2: instagramSImg,
     desc: "Team of three crafted a simple, user-friendly Instagram clone for a seamless social experience",
@@ -93,7 +89,13 @@ const data = [
       "MongoDB",
       "Socket",
     ],
-    features: [ "Login Signup", "Create Post", "Chat", "Follow User", "Comment and Like"],
+    features: [
+      "Login Signup",
+      "Create Post",
+      "Chat",
+      "Follow User",
+      "Comment and Like",
+    ],
     resp: "Contributed on profile page, Follow and Unfollow functionality. Contributed to post route and follower routes in backend",
     git: "https://github.com/arjundangi01/Instagram-Clone",
     preview: "https://instaclonevi.netlify.app/",
@@ -101,14 +103,13 @@ const data = [
   {
     id: 4,
     title: "Auction Website",
-    subTitle:
-      "MERN-based auction platform with real-time bidding.",
+    subTitle: "MERN-based auction platform with real-time bidding.",
     img1: auctionImg,
     img2: auctionSImg,
     desc: "I developed a full-stack auction site with MERN stack and socket-io. Introducing real-time bids and user-friendly navigation, ensuring a seamless and feature-rich experience. ",
     techUsed: [
       "React",
-      "Redux",   
+      "Redux",
       "Javascript",
       "Tailwind Css",
       "Node",
@@ -116,7 +117,13 @@ const data = [
       "MongoDB",
       "Socket",
     ],
-    features: ["Login and Signup", "Sell Product","Purchase Product","Place a Bid", "Search Product", ],
+    features: [
+      "Login and Signup",
+      "Sell Product",
+      "Purchase Product",
+      "Place a Bid",
+      "Search Product",
+    ],
     resp: "Independently created: Managed all aspects of the project",
     git: "https://github.com/arjundangi01/Auction-Website",
     preview: "https://subtle-cupcake-2e83a9.netlify.app/",
@@ -124,22 +131,21 @@ const data = [
   {
     id: 5,
     title: "Chat App",
-    subTitle:
-      "A chat application built with Next Js",
+    subTitle: "A chat application built with Next Js",
     img1: chatImg,
     img2: chatImgS,
     desc: "I developed a real-time chat application for unlimited chat",
     techUsed: [
       "NextJs",
       "Redux",
-      "Typescript",  
+      "Typescript",
       "Tailwind Css",
       "Node",
       "Express",
       "MongoDB",
       "Socket",
     ],
-    features: ["Login Signup", "Unlimited Chat", "Search User", ],
+    features: ["Login Signup", "Unlimited Chat", "Search User"],
     resp: "Independently created: Managed all aspects of the project",
     git: "https://github.com/arjundangi01/Chat-App",
     preview: "https://elaborate-shortbread-8d0fc5.netlify.app/",
@@ -161,7 +167,15 @@ const data = [
       "Express",
       "MongoDB",
     ],
-    features: [ "Login and Signup","Profile Page", "Edit Profile", "Create Blog", "Update Blog", "Follow User", "Like and Comment on BLog",],
+    features: [
+      "Login and Signup",
+      "Profile Page",
+      "Edit Profile",
+      "Create Blog",
+      "Update Blog",
+      "Follow User",
+      "Like and Comment on BLog",
+    ],
     resp: "Independently created: Managed all aspects of the project",
     git: "https://github.com/arjundangi01/Medium-clone",
     preview: "https://comforting-taffy-d07f72.netlify.app/",
