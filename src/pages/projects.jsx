@@ -161,7 +161,7 @@ const data = [
       "Express",
       "MongoDB",
     ],
-    features: ["Create Blog", "Update Blog", "Follow User", "Comment on BLog"],
+    features: [ "Login and Signup","Profile Page", "Edit Profile", "Create Blog", "Update Blog", "Follow User", "Like and Comment on BLog",],
     resp: "Independently created: Managed all aspects of the project",
     git: "https://github.com/arjundangi01/Medium-clone",
     preview: "https://comforting-taffy-d07f72.netlify.app/",
