@@ -116,7 +116,7 @@ const data = [
       "MongoDB",
       "Socket",
     ],
-    features: ["Login Signup", "Sell Product","Purchase Product","Place a Bid", "Search Product", ],
+    features: ["Login and Signup", "Sell Product","Purchase Product","Place a Bid", "Search Product", ],
     resp: "Independently created: Managed all aspects of the project",
     git: "https://github.com/arjundangi01/Auction-Website",
     preview: "https://subtle-cupcake-2e83a9.netlify.app/",
