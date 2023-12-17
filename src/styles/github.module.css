@@ -1,0 +1,50 @@
+.github {
+  margin: 10rem 0rem;
+  /* padding: 1rem; */
+  /* display: flex; */
+  /* justify-content: center; */
+  width: 100%;
+  overflow: hidden;
+  /* border: 1px solid #dc1010; */
+}
+.container {
+  /* width: 50%; */
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 8rem;
+}
+.container img {
+  width: 100%;
+}
+.top {
+  display: flex;
+  gap: 1rem;
+}
+.top img {
+  height: 210px;
+}
+@media only screen and (max-width: 900px) {
+  .top {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .top {
+    gap: 0.5rem 0rem;
+  }
+  .top img {
+    height: 180px;
+  }
+  .top > div{
+    width: 100%;
+  }
+}
