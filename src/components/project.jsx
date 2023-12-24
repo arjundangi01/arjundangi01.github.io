@@ -28,13 +28,8 @@ const Project = ({
   return (
     <div className={`project-card ${style.project}`}>
       <div className={`${style.content}`}>
-        <motion.div
-          initial={{ x: -40, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          // viewport={{ once: false, amount: 1 }}
-          transition={{
-            duration: 0.5,
-          }}
+        <div
+         
           className={`${style.contentLeft}`}
         >
           {/* <div className={`${style.contentLeft}`}> */}
@@ -58,16 +53,11 @@ const Project = ({
             </a>
           </div>
           {/* </div> */}
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           className={`${style.contentRight}`}
-          initial={{ x: 40, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          // viewport={{ once: false, amount: 1 }}
-          transition={{
-            duration: 0.5,
-          }}
+          
         >
           {/* <div className={`${style.contentRight}`}> */}
           <div className={`${style.inner1}`}>
@@ -93,7 +83,7 @@ const Project = ({
             </div>
           </div>
           {/* </div> */}
-        </motion.div>
+        </div>
       </div>
       <motion.div
         initial={"offscreen"}

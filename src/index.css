@@ -22,6 +22,9 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-track{
   background: #6d6a6a;
 }
+body {
+  overflow-x: hidden;
+}
 
 html {
   scroll-behavior: smooth;
