@@ -1,0 +1,187 @@
+.skillsContainer {
+  /* color: rgb(0, 0, 0); */
+  /* margin-top: 25px; */
+  width: 100%;
+  overflow: hidden;
+  /* border: 1px solid #f2f2f2; */
+  /* padding: 6rem 0rem; */
+  margin: 6rem 0rem;
+  position: relative;
+  
+}
+
+.container {
+  position: relative; 
+
+  font-family: 'Poppins', sans-serif; 
+
+  z-index: 500;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+  margin-top: 10rem;
+  gap: 4rem 3rem;
+}
+.container .card
+{
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  backdrop-filter: blur(5px);
+  z-index: 900;
+   display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center; 
+
+
+}
+.skillDiv {
+  margin: auto;
+
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;   
+   text-align: center; 
+  transform: translateY(30px);
+  opacity: 1;
+  transition: 0.5s;
+  max-height: 400px;
+  /* border: 1px solid #000; */
+}
+
+.card:hover  {
+  box-shadow: rgba(80, 202, 246, 0.4) 0px 0px 0px 2px, rgba(80, 202, 246, 0.65) 0px 4px 6px -1px, rgba(80, 202, 246, 0.08) 0px 1px 0px inset;
+ 
+  background: none;
+  /* transition: .3s; */
+  transform: translateY(-10px);
+}
+.skillDiv  h3 {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 1.8em;
+  /* color: #1b0f0f; */
+  color: #31afe4;
+  font-weight: 600;
+  z-index: 1;
+  margin-top: 8px;
+
+}
+.skillDiv:hover h3 {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 0.5s;
+
+}
+
+.img {
+  max-height: 80%;
+  min-height: 80%;
+   margin: auto;
+  min-width: 80%;
+  max-width: 80%;
+  z-index: 1;
+ 
+  /* object-fit: cover; */
+}
+  .name {
+
+
+}
+.container .card:hover .skillDiv{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1550px) {
+  .container {
+    width: 90%;
+  gap: 4rem 2rem;
+
+    /* grid-template-columns: repeat(5,1fr); */
+
+  } 
+}
+@media only screen and (min-width: 1100px) and (max-width: 1250px) {
+  .container {
+    width: 90%;
+
+    grid-template-columns: repeat(5,1fr);
+
+  } 
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1100px) {
+  .container {
+    width: 90%;
+
+    grid-template-columns: repeat(4,1fr);
+
+  }
+  
+}
+@media only screen and (min-width: 700px) and (max-width: 850px) {
+  .container {
+    width: 90%;
+
+    grid-template-columns: repeat(3,1fr);
+
+  }
+  
+}
+@media only screen and (min-width: 555px) and (max-width: 700px) {
+  .container {
+    width: 90%;
+
+    grid-template-columns: repeat(3,1fr);
+     gap: 3rem 2rem;
+     
+  }
+  
+}
+@media only screen and (min-width: 455px) and (max-width: 555px) {
+  .container {
+    width: 90%;
+
+    grid-template-columns: repeat(2,1fr);
+     gap: 3rem 2rem;
+     
+  }
+  
+}
+@media only screen and (max-width: 900px) {
+  /* .container {
+    grid-template-columns: repeat(2,1fr);
+
+  } */
+  .skillsContainer{
+    /* padding: 0; */
+  }
+  .skillDiv:hover h3 {
+   font-size: 2rem;
+  
+  }
+  
+}
+@media only screen and (max-width: 455px) {
+  .container {
+    width: 90%;
+    grid-template-columns: repeat(2,1fr);
+     gap: 2.5rem 1.2rem;
+  }
+  .skillDiv:hover h3 {
+    font-size: 2rem;
+   
+   }
+  
+  
+}
