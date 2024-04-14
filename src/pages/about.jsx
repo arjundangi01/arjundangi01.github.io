@@ -5,7 +5,7 @@ import arjunImg from "./Images/avatar.jpg";
 import Button from "../components/button/button";
 import { useBreakpointValue } from "@chakra-ui/react";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import pdf from "./Images/Arjun-Dangi-Resume.pdf"
+import pdf from "./Images/Arjun-Dangi-Resume.pdf";
 
 const About = () => {
   // -
@@ -48,134 +48,136 @@ const About = () => {
         About
       </motion.h2>
       <motion.div
-                  initial={"offscreen"}
-                  whileInView={"onscreen"}
-                  variants={containerAnimation}
-                >
-      <div className={`${style.container}`}>
-        <div className={`${style.leftDiv}`}>
-          {/* <img src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="" /> */}
-          <motion.div
-            initial={{ y: 0, x: 0 }}
-            whileHover={{ y: 10, x: 10 }}
-            className={style.back_div}
-          >
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        variants={containerAnimation}
+      >
+        <div className={`${style.container}`}>
+          <div className={`${style.leftDiv}`}>
+            {/* <img src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="" /> */}
             <motion.div
-              initial={{ y: -20, x: -20 }}
-              whileHover={{ y: -40, x: -40 }}
+              initial={{ y: 0, x: 0 }}
+              whileHover={{ y: 10, x: 10 }}
+              className={style.back_div}
             >
-              <img className="home-img" src={arjunImg} alt="" />
-            </motion.div>
-          </motion.div>
-        </div>
-        <div className={`${style.rightDdiv}`}>
-          <div id="user-detail-intro" >
-            <p className={`${style.my_desc}`}>
-              An enthusiastic Full Stack Web Developer with a strong set of
-              technical skills like Javascript, React, NodeJs, Express, MonogoDB  as well as non-technical skills and a dedication towards
-              creating useful and interactive web applications using MERN stack.
-            </p>
-            <div className={style.card_container}>
-              <div className={style.card}>
-                <motion.div
-                  initial={"offscreen"}
-                  whileInView={"onscreen"}
-                  variants={textAnimate}
-                >
-                  <h1>
-                    <span>10+</span>
-                  </h1>
-                  <h2>Solo Projects</h2>
-                </motion.div>
-              </div>
-              <div className={style.card}>
-                <motion.div
-                  initial={"offscreen"}
-                  whileInView={"onscreen"}
-                  variants={textAnimate}
-                >
-                  <h1>
-                    <span>500+</span>
-                  </h1>
-                  <h2>DSA</h2>
-                </motion.div>
-              </div>
-              <div className={style.card}>
-                <motion.div
-                  initial={"offscreen"}
-                  whileInView={"onscreen"}
-                  variants={textAnimate}
-                >
-                  <h1>
-                    <span>3+</span>
-                  </h1>
-                  <h2>Team Projects</h2>
-                </motion.div>
-              </div>
-            </div>
-            <div className={style.skill_div}>
-              <div>
-                {" "}
-                <p className="d-flex align-items-center gap-md-2 gap-sm-1">
-                  {" "}
-                  <span>
-                    <IoIosCheckmarkCircleOutline />
-                  </span>{" "}
-                  Problem Solving
-                </p>
-              </div>
-              <div>
-                {" "}
-                <p className="d-flex align-items-center gap-md-2 gap-sm-1 ">
-                  {" "}
-                  <span>
-                    <IoIosCheckmarkCircleOutline />
-                  </span>{" "}
-                  Adaptability
-                </p>{" "}
-              </div>
-              <div>
-                {" "}
-                <p className="d-flex align-items-center gap-md-2 gap-sm-1 ">
-                  {" "}
-                  <span>
-                    <IoIosCheckmarkCircleOutline />
-                  </span>{" "}
-                  Time management
-                </p>{" "}
-              </div>
-              <div>
-                {" "}
-                <p className="d-flex align-items-center gap-md-2 gap-sm-1 ">
-                  {" "}
-                  <span>
-                    <IoIosCheckmarkCircleOutline />
-                  </span>{" "}
-                  Team worker
-                </p>{" "}
-              </div>
-            </div>
-
-            <div className={style.button_div}>
-              <a
-                className="resume"
-                aria-current="page"
-                id="resume-link-2"
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/1bFjFGaZ4Vyu4AZ9ErVE4YVr9dDUjc72I/view?usp=sharing"
-                  )
-                }
-                download="Arjun-Dangi-Resume"
-                href={pdf}
+              <motion.div
+                initial={{ y: -20, x: -20 }}
+                whileHover={{ y: -40, x: -40 }}
               >
-                <Button text="Resume" id="resume-button-2" />
-              </a>
+                <img className="home-img" src={arjunImg} alt="" />
+              </motion.div>
+            </motion.div>
+          </div>
+          <div className={`${style.rightDdiv}`}>
+            <div id="user-detail-intro">
+              <p className={`${style.my_desc}`}>
+                An enthusiastic Full Stack Web Developer with a strong set of
+                technical skills like Javascript, React, NodeJs, Express,
+                MonogoDB as well as non-technical skills and a dedication
+                towards creating useful and interactive web applications using
+                MERN stack.
+              </p>
+              <div className={style.card_container}>
+                <div className={style.card}>
+                  <motion.div
+                    initial={"offscreen"}
+                    whileInView={"onscreen"}
+                    variants={textAnimate}
+                  >
+                    <h1>
+                      <span>10+</span>
+                    </h1>
+                    <h2>Solo Projects</h2>
+                  </motion.div>
+                </div>
+                <div className={style.card}>
+                  <motion.div
+                    initial={"offscreen"}
+                    whileInView={"onscreen"}
+                    variants={textAnimate}
+                  >
+                    <h1>
+                      <span>500+</span>
+                    </h1>
+                    <h2>DSA</h2>
+                  </motion.div>
+                </div>
+                <div className={style.card}>
+                  <motion.div
+                    initial={"offscreen"}
+                    whileInView={"onscreen"}
+                    variants={textAnimate}
+                  >
+                    <h1>
+                      <span>3+</span>
+                    </h1>
+                    <h2>Team Projects</h2>
+                  </motion.div>
+                </div>
+              </div>
+              <div className={style.skill_div}>
+                <div>
+                  {" "}
+                  <p className="d-flex align-items-center gap-md-2 gap-sm-1">
+                    {" "}
+                    <span>
+                      <IoIosCheckmarkCircleOutline />
+                    </span>{" "}
+                    Problem Solving
+                  </p>
+                </div>
+                <div>
+                  {" "}
+                  <p className="d-flex align-items-center gap-md-2 gap-sm-1 ">
+                    {" "}
+                    <span>
+                      <IoIosCheckmarkCircleOutline />
+                    </span>{" "}
+                    Adaptability
+                  </p>{" "}
+                </div>
+                <div>
+                  {" "}
+                  <p className="d-flex align-items-center gap-md-2 gap-sm-1 ">
+                    {" "}
+                    <span>
+                      <IoIosCheckmarkCircleOutline />
+                    </span>{" "}
+                    Time management
+                  </p>{" "}
+                </div>
+                <div>
+                  {" "}
+                  <p className="d-flex align-items-center gap-md-2 gap-sm-1 ">
+                    {" "}
+                    <span>
+                      <IoIosCheckmarkCircleOutline />
+                    </span>{" "}
+                    Team worker
+                  </p>{" "}
+                </div>
+              </div>
+
+              <div className={style.button_div}>
+                <a
+                  className="resume"
+                  aria-current="page"
+                  // id="resume-link-2"
+                  // onClick={() =>
+                  //   window.open(
+                  //     "https://drive.google.com/file/d/1bFjFGaZ4Vyu4AZ9ErVE4YVr9dDUjc72I/view?usp=sharing"
+                  //   )
+                  // }
+                  // download="Arjun-Dangi-Resume"
+                  // href={pdf}
+                >
+                  <Button text="Resume" id="resume-button-2" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        </div>
-        </motion.div>
+      </motion.div>
     </div>
   );
 };
