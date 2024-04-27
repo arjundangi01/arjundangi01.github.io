@@ -53,8 +53,7 @@ const About = () => {
         variants={containerAnimation}
       >
         <div className={`${style.container}`}>
-          <div className={`${style.leftDiv}`}>
-            {/* <img src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="" /> */}
+          {/* <div className={`${style.leftDiv}`}>
             <motion.div
               initial={{ y: 0, x: 0 }}
               whileHover={{ y: 10, x: 10 }}
@@ -67,11 +66,11 @@ const About = () => {
                 <img className="home-img" src={arjunImg} alt="" />
               </motion.div>
             </motion.div>
-          </div>
+          </div> */}
           <div className={`${style.rightDdiv}`}>
             <div id="user-detail-intro">
               <p className={`${style.my_desc}`}>
-                An enthusiastic Full Stack Web Developer with a strong set of
+                An enthusiastic Full Stack  Developer with a strong set of
                 technical skills like Javascript, React, NodeJs, Express,
                 MonogoDB as well as non-technical skills and a dedication
                 towards creating useful and interactive web applications using

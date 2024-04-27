@@ -11,6 +11,8 @@ import { AiOutlinePhone } from "react-icons/ai";
 import { useBreakpointValue } from "@chakra-ui/react";
 import Tilt from "react-parallax-tilt";
 import "../index.css";
+// import style from "../styles/about.module.css";
+
 const Home = () => {
   const variant = useBreakpointValue({
     base: true,
@@ -59,8 +61,8 @@ const Home = () => {
             <h1 id="user-detail-name">
               I am <span className={`${style.h_text}`}>Arjun Dangi</span>{" "}
             </h1>
-            <h1 id="user-detail-intro">Aspiring Full Stack </h1>
-            <h1 className={`${style.h_text}`}>Developer</h1>
+            <h1 id="user-detail-intro"> Full Stack </h1>
+            <h1 className={`${style.h_text}`}>Developer @ Byldd</h1>
             <div className="d-flex gap-2">
               <a href="https://github.com/arjundangi01" target="blank">
                 <Button text={<AiFillGithub />} />
@@ -74,19 +76,24 @@ const Home = () => {
             </div>
           </div>
         </motion.div>
-        <div className={`${style.right_div}`}>
+        {/* <div className={`${style.right_div}`}> */}
           {/* <img className={`${style.home_img}`} src={arjunImg} alt="" /> */}
-          <Tilt
-            flipVertically={flipVertically}
-            flipHorizontally={flipHorizontally}
-          >
-            <img
-              className={`${style.home_img}`}
-              src="https://camo.githubusercontent.com/c1dcb74cc1c1835b1d716f5051499a2814c683c806b15f04b0eba492863703e9/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966"
-              alt=""
-            />
-          </Tilt>
-        </div>
+          <div className={`${style.leftDiv}`}>
+            {/* <img src="https://media1.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="" /> */}
+            <motion.div
+              initial={{ y: 0, x: 0 }}
+              whileHover={{ y: 10, x: 10 }}
+              className={style.back_div}
+            >
+              <motion.div
+                initial={{ y: -20, x: -20 }}
+                whileHover={{ y: -40, x: -40 }}
+              >
+                <img className="home-img" src={arjunImg} alt="" />
+              </motion.div>
+            </motion.div>
+          </div>
+        {/* </div> */}
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ function App() {
       <Home isH1Fixed={isH1Visible} setIsH1Fixed={setIsH1Visible} />
       <About />
       <Skills />
-      <Tools/>
+      {/* <Tools/> */}
       <Projects />
       <Github />
       <Contact/>
