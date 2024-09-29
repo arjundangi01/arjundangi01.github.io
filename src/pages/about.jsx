@@ -1,16 +1,12 @@
 import React from "react";
 import style from "../styles/about.module.css";
-import { motion, Variants } from "framer-motion";
-import arjunImg from "./Images/avatar.jpg";
+import { motion,  } from "framer-motion";
 import Button from "../components/button/button";
 import { useBreakpointValue } from "@chakra-ui/react";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import pdf from "./Images/Arjun-Dangi-Resume.pdf";
 
 const About = () => {
-  // -
-  // -
-  // -
+  
   const variant = useBreakpointValue({
     base: true,
     md: false,
