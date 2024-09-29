@@ -6,7 +6,7 @@ import { useBreakpointValue } from "@chakra-ui/react";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 const About = () => {
-  
+  //
   const variant = useBreakpointValue({
     base: true,
     md: false,
