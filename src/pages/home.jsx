@@ -11,7 +11,6 @@ import { AiOutlinePhone } from "react-icons/ai";
 import { useBreakpointValue } from "@chakra-ui/react";
 import Tilt from "react-parallax-tilt";
 import "../index.css";
-// import style from "../styles/about.module.css";
 
 const Home = () => {
   const variant = useBreakpointValue({
