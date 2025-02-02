@@ -63,7 +63,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. To deploy your project to GitHub Pages:
+
+Install gh-pages:
+
+If you haven't already, install the gh-pages package as a development dependency:
+
+Update package.json:
+
+Add a deploy script in your package.json to deploy the dist folder:
+
+"scripts": {
+"deploy": "gh-pages -d dist"
+}
+
+3. After building your project, run the following command to deploy it to GitHub Pages:
+   npm run deploy
 
 ### `npm run build` fails to minify
 
