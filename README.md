@@ -69,7 +69,7 @@ Install gh-pages:
 
 If you haven't already, install the gh-pages package as a development dependency:
 
-Update package.json:
+2. Update package.json:
 
 Add a deploy script in your package.json to deploy the dist folder:
 
