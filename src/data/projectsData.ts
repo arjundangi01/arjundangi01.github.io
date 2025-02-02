@@ -1,12 +1,42 @@
-export const projectsData = {
+const getImageUrl = ({
+  projectName,
+  formate,
+}: {
+  projectName: string;
+  formate: "desktop" | "mobile";
+}) => {
+  if (formate == "mobile") {
+    return `https://placehold.co/100x105/221b4b/ffffff.png?text=${projectName}&font=noto-sans`;
+  }
+  return `https://placehold.co/600x450/221b4b/ffffff.png?text=${projectName}&font=noto-sans`;
+};
+
+interface Project {
+  title: string;
+  subTitle: string;
+  desktopImage: string;
+  mobileImage: string;
+  description: string;
+  techStack: string[];
+  features: string[];
+  responsibility: string;
+  githubUrl: string;
+  previewUrl: string;
+}
+
+export const projectsData: { professional: Project[]; personal: Project[] } = {
   professional: [
     {
       title: "Franzy",
       subTitle: "Franzy: Franchise Discovery and Investment Platform",
-      desktopImage:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80",
-      mobileImage:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80",
+      desktopImage: getImageUrl({
+        projectName: "Franzy",
+        formate: "desktop",
+      }),
+      mobileImage: getImageUrl({
+        projectName: "Franzy",
+        formate: "mobile",
+      }),
       description:
         "Built a platform that helps users find, research, and invest in franchises that match their personal and financial goals.",
       techStack: [
@@ -26,16 +56,20 @@ export const projectsData = {
         "Contributed to multiple pages across the platform",
       ],
       responsibility: "",
-      githubUrl: "#",
-      previewUrl: "#",
+      githubUrl: "",
+      previewUrl: "",
     },
     {
       title: "Decimal",
       subTitle: "Decimal: Loan Refinance Platform",
-      desktopImage:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80",
-      mobileImage:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80",
+      desktopImage: getImageUrl({
+        projectName: "Decimal",
+        formate: "desktop",
+      }),
+      mobileImage: getImageUrl({
+        projectName: "Decimal",
+        formate: "mobile",
+      }),
       description:
         "Developed a platform that helps users find refinance options for their loans, providing offers and tracking user data.",
       techStack: [
@@ -54,17 +88,21 @@ export const projectsData = {
         "Built dashboard pages to display refinance  and user data",
       ],
       responsibility: "",
-      githubUrl: "#",
-      previewUrl: "#",
+      githubUrl: "",
+      previewUrl: "",
     },
 
     {
       title: "Romeano",
       subTitle: "Romeano: Meeting Recording App",
-      desktopImage:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80",
-      mobileImage:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80",
+      desktopImage: getImageUrl({
+        projectName: "Romeano",
+        formate: "desktop",
+      }),
+      mobileImage: getImageUrl({
+        projectName: "Romeano",
+        formate: "mobile",
+      }),
       description:
         "Developed a macOS app for meeting recording, focusing on the frontend with features like auto-update and code signing.",
       techStack: ["React", "TypeScript", "Electron.js", "Vite", "Tailwind"],
@@ -75,72 +113,117 @@ export const projectsData = {
         "Implemented auto-update (OTA updates) for seamless user experience",
       ],
       responsibility: "",
-      githubUrl: "#",
-      previewUrl: "#",
+      githubUrl: "",
+      previewUrl: "",
     },
   ],
   personal: [
     {
-      title: "E-Commerce Platform",
-      subTitle: "Full-stack Shopping Experience",
-      desktopImage:
-        "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80",
-      mobileImage:
-        "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80",
+      title: "Travelious",
+      subTitle: "A Full Stack travel booking website",
+      desktopImage: getImageUrl({
+        projectName: "Travelious",
+        formate: "desktop",
+      }),
+      mobileImage: getImageUrl({
+        projectName: "Travelious",
+        formate: "mobile",
+      }),
       description:
-        "A comprehensive e-commerce platform with real-time inventory management and secure payment processing.",
-      techStack: ["React", "Node.js", "MongoDB", "GraphQL", "Stripe"],
+        "Constructed a robust travel booking platform with MERN stack, featuring secure user authentication, tour search, booking capabilities and secure payments. Users can access their profiles showcasing booking history and effortlessly cancel reservations.",
+      techStack: [
+        "Node js",
+        "Express",
+        "MongoDB",
+        "React",
+        "Routing",
+        "Redux",
+        "Chakra-UI",
+      ],
       features: [
-        "Real-time inventory tracking",
-        "Secure payment processing",
-        "User authentication",
-        "Order management",
+        "Login",
+        "Signup",
+        "Tour Page",
+        "Booking History and update facility",
+        "Profile Page",
+        "Payment Page",
       ],
       responsibility:
-        "Led the frontend development and implemented the payment system",
-      githubUrl: "#",
-      previewUrl: "#",
+        "Independently Managed all aspects of the backend. In frontend, I contributed to the creation of the  tour detail page, navbar, profile page having user booking history, and login signup page",
+      githubUrl: "https://github.com/arjundangi01/Travelious",
+      previewUrl: "https://travelious-project.netlify.app/",
     },
     {
-      title: "Task Management System",
-      subTitle: "Electron.js Desktop Application",
-      desktopImage:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80",
-      mobileImage:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80",
+      title: "Auction Website",
+      subTitle: "MERN-based auction platform with real-time bidding.",
+      desktopImage: getImageUrl({
+        projectName: "Auction Website",
+        formate: "desktop",
+      }),
+      mobileImage: getImageUrl({
+        projectName: "Auction Website",
+        formate: "mobile",
+      }),
       description:
-        "A desktop application built with Electron.js for task and project management with offline capabilities.",
-      techStack: ["Electron.js", "React", "TypeScript", "SQLite"],
+        "I developed a full-stack auction site with MERN stack and socket-io. Introducing real-time bids and user-friendly navigation, ensuring a seamless and feature-rich experience. ",
+      techStack: [
+        "React",
+        "Redux",
+        "Javascript",
+        "Tailwind Css",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Socket",
+      ],
       features: [
-        "Offline-first architecture",
-        "Project timeline visualization",
-        "Team collaboration features",
-        "File attachments",
+        "Login and Signup",
+        "Sell Product",
+        "Purchase Product",
+        "Place a Bid",
+        "Search Product",
       ],
       responsibility:
-        "Developed the core application architecture and offline sync functionality",
-      githubUrl: "#",
-      previewUrl: "#",
+        "Independently created: Managed all aspects of the project",
+      githubUrl: "https://github.com/arjundangi01/Auction-Website",
+      previewUrl: "https://subtle-cupcake-2e83a9.netlify.app/",
     },
     {
-      title: "Real-time Chat Platform",
-      subTitle: "GraphQL & WebSocket Integration",
-      desktopImage:
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80",
-      mobileImage:
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80",
+      title: "Medium Clone",
+      subTitle:
+        "Individual project:  built a seamless Medium clone using MERN stack.",
+      desktopImage: getImageUrl({
+        projectName: "Medium Clone",
+        formate: "desktop",
+      }),
+      mobileImage: getImageUrl({
+        projectName: "Medium Clone",
+        formate: "mobile",
+      }),
       description:
-        "A modern chat application with real-time messaging and file sharing capabilities.",
-      techStack: ["React", "GraphQL", "WebSocket", "Prisma", "PostgreSQL"],
-      features: [
-        "Real-time messaging",
-        "File sharing",
-        "User presence indicators",
-        "Message encryption",
+        "I developed a Medium clone using the MERN stack. Demonstrating my skills in web development and full-stack programming.",
+      techStack: [
+        "React",
+        "Redux",
+        "Javascript",
+        "Tailwind",
+        "Node",
+        "Express",
+        "MongoDB",
       ],
-      responsibility: "Implemented the GraphQL API and real-time features",
-      githubUrl: "#",
-      previewUrl: "#",
+      features: [
+        "Login and Signup",
+        "Profile Page",
+        "Edit Profile",
+        "Create Blog",
+        "Update Blog",
+        "Follow User",
+        "Like and Comment on Blog",
+      ],
+      responsibility:
+        "Independently created: Managed all aspects of the project",
+      githubUrl: "https://github.com/arjundangi01/Medium-clone",
+      previewUrl: "https://comforting-taffy-d07f72.netlify.app/",
     },
   ],
 };

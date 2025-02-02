@@ -1,9 +1,9 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Canvas } from '@react-three/fiber';
-import { Terminal, Briefcase, GraduationCap } from 'lucide-react';
-import AboutScene from './AboutScene';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Canvas } from "@react-three/fiber";
+import { Terminal, Briefcase, GraduationCap } from "lucide-react";
+import AboutScene from "./AboutScene";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -14,25 +14,31 @@ const About = () => {
   const timelineData = [
     {
       icon: Briefcase,
-      title: 'Full Stack Developer at Byldd',
-      date: 'January 2024 - Present',
-      description: 'Building scalable web applications using modern technologies.',
+      title: "Full Stack Developer at Byldd",
+      date: "January 2024 - Present",
+      description:
+        "Building scalable web applications using modern technologies.",
     },
     {
       icon: GraduationCap,
-      title: 'Computer Science',
-      date: 'Masai School',
-      description: 'Intensive full-stack development program with hands-on project experience.',
+      title: "Computer Science",
+      date: "Masai School",
+      description:
+        "Intensive full-stack development program with hands-on project experience.",
     },
     {
       icon: Terminal,
-      title: 'Tech Stack Expertise',
-      description: 'Specialized in MERN stack, Prisma, Electron.js, and GraphQL development.',
+      title: "Tech Stack Expertise",
+      description:
+        "Specialized in MERN stack, Prisma, Electron.js, and GraphQL development.",
     },
   ];
 
   return (
-    <section className="relative min-h-screen py-20 bg-gradient-to-b from-gray-900 to-black overflow-hidden" id="about">
+    <section
+      className="relative min-h-screen py-20 bg-gradient-to-b from-gray-900 to-black overflow-hidden"
+      id="about"
+    >
       {/* 3D Background */}
       <div className="absolute inset-0 opacity-30">
         <Canvas>
@@ -51,7 +57,10 @@ const About = () => {
             About Me
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Passionate about crafting exceptional digital experiences through innovative solutions
+            A passionate learner aiming to thrive in the IT world. Enthusiastic
+            about adopting new technologies, the focus is on acquiring industry
+            experience and cultivating skills for both personal and
+            organizational advancement
           </p>
         </motion.div>
 
@@ -76,7 +85,9 @@ const About = () => {
                     <item.icon className="w-5 h-5 text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-1">{item.title}</h3>
+                    <h3 className="text-xl font-semibold text-white mb-1">
+                      {item.title}
+                    </h3>
                     {item.date && (
                       <p className="text-blue-400 text-sm mb-2">{item.date}</p>
                     )}
@@ -104,7 +115,7 @@ const About = () => {
             </div>
 
             {/* Floating Tech Cards */}
-            {['MERN', 'GraphQL', 'Electron'].map((tech, index) => (
+            {["MERN", "GraphQL", "Electron"].map((tech, index) => (
               <motion.div
                 key={tech}
                 initial={{ opacity: 0, y: 20 }}
@@ -113,7 +124,7 @@ const About = () => {
                 className="absolute bg-gray-800/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm text-blue-400 border border-blue-500/30"
                 style={{
                   top: `${20 + index * 25}%`,
-                  right: index % 2 === 0 ? '-5%' : '85%',
+                  right: index % 2 === 0 ? "-5%" : "85%",
                 }}
               >
                 {tech}

@@ -1,33 +1,37 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
-import { Canvas } from '@react-three/fiber';
-import ContactScene from './ContactScene';
+import React from "react";
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import { Canvas } from "@react-three/fiber";
+import ContactScene from "./ContactScene";
+import { urls } from "../utils/urls";
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com'
+      title: "Email",
+      value: urls.email,
+      href: `mailto:${urls.email}`, //open gmail
     },
     {
       icon: Phone,
-      title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      title: "Phone",
+      value: "+91 8349831395",
+      href: "tel:+918349831395",
     },
     {
       icon: MapPin,
-      title: 'Location',
-      value: 'Mumbai, India',
-      href: '#'
-    }
+      title: "Location",
+      value: "Indore, Madhya Pradesh, India",
+      href: "",
+    },
   ];
 
   return (
-    <section className="relative min-h-screen py-20 bg-gradient-to-b from-gray-900 to-black" id="contact">
+    <section
+      className="relative min-h-screen py-20 bg-gradient-to-b from-gray-900 to-black"
+      id="contact"
+    >
       {/* 3D Background */}
       <div className="absolute inset-0 opacity-30">
         <Canvas camera={{ position: [0, 0, 5] }}>
@@ -46,7 +50,8 @@ const Contact = () => {
             Get in Touch
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Let's collaborate and bring your ideas to life. Feel free to reach out!
+            Let's collaborate and bring your ideas to life. Feel free to reach
+            out!
           </p>
         </motion.div>
 
@@ -71,8 +76,12 @@ const Contact = () => {
                   <item.icon className="w-6 h-6 text-blue-400 group-hover:text-blue-300 transition-colors" />
                 </div>
                 <div>
-                  <h3 className="text-gray-300 font-medium mb-1">{item.title}</h3>
-                  <p className="text-gray-400 group-hover:text-blue-400 transition-colors">{item.value}</p>
+                  <h3 className="text-gray-300 font-medium mb-1">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-400 group-hover:text-blue-400 transition-colors">
+                    {item.value}
+                  </p>
                 </div>
               </motion.a>
             ))}
@@ -85,9 +94,17 @@ const Contact = () => {
               className="flex space-x-4 mt-8"
             >
               {[
-                { icon: Github, href: "https://github.com", label: "GitHub" },
-                { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-                { icon: Mail, href: "mailto:your.email@example.com", label: "Email" }
+                { icon: Github, href: urls.github, label: "GitHub" },
+                {
+                  icon: Linkedin,
+                  href: urls.linkedin,
+                  label: "LinkedIn",
+                },
+                {
+                  icon: Mail,
+                  href: urls.email,
+                  label: "Email",
+                },
               ].map(({ icon: Icon, href, label }) => (
                 <motion.a
                   key={label}
@@ -148,6 +165,7 @@ const Contact = () => {
             </div>
 
             <motion.button
+              onClick={() => {}}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="w-full py-4 px-6 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-medium flex items-center justify-center space-x-2 transition-colors group"

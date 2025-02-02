@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { Github, Linkedin, Mail, ChevronDown, Code, Rocket, Sparkles } from 'lucide-react';
-import { Canvas } from '@react-three/fiber';
-import Hero3DScene from './Hero3DScene';
-import Tilt from 'react-parallax-tilt';
+import React, { useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ChevronDown,
+  Code,
+  Rocket,
+  Sparkles,
+} from "lucide-react";
+import { Canvas } from "@react-three/fiber";
+import Hero3DScene from "./Hero3DScene";
+import Tilt from "react-parallax-tilt";
+import { urls } from "../utils/urls";
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -11,7 +20,15 @@ const Hero = () => {
   const y = useTransform(scrollY, [0, 300], [0, 100]);
   const [isHovered, setIsHovered] = useState(false);
 
-  const titleWords = ['Full', 'Stack', 'Developer'];
+  const titleWords = [
+    "Hello,",
+    "I'm",
+    "Arjun",
+    "Dangi",
+    "Full",
+    "Stack",
+    "Developer",
+  ];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 via-gray-800 to-black">
@@ -48,8 +65,8 @@ const Hero = () => {
           />
         ))}
       </div>
-      
-      <motion.div 
+
+      <motion.div
         style={{ opacity, y }}
         className="relative z-10 max-w-6xl mx-auto px-4"
       >
@@ -81,21 +98,21 @@ const Hero = () => {
                   {titleWords.map((word, index) => (
                     <motion.span
                       key={word}
-                      className="inline-block bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text"
+                      className="inline-block bg-gradient-to-r p-1 from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.2, duration: 0.8 }}
                       whileHover={{
                         scale: 1.05,
                         color: "#fff",
-                        transition: { duration: 0.2 }
+                        transition: { duration: 0.2 },
                       }}
                     >
                       {word}
                     </motion.span>
                   ))}
                 </h1>
-                
+
                 {/* Decorative Elements */}
                 <motion.div
                   className="absolute -top-10 -left-10 text-blue-500/50"
@@ -106,7 +123,7 @@ const Hero = () => {
                   transition={{
                     duration: 5,
                     repeat: Infinity,
-                    ease: "linear"
+                    ease: "linear",
                   }}
                 >
                   <Code size={40} />
@@ -120,7 +137,7 @@ const Hero = () => {
                   transition={{
                     duration: 5,
                     repeat: Infinity,
-                    ease: "linear"
+                    ease: "linear",
                   }}
                 >
                   <Rocket size={40} />
@@ -143,7 +160,7 @@ const Hero = () => {
               transition={{
                 duration: 2,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
               className="text-xl md:text-2xl text-gray-400 mb-12 relative"
             >
@@ -158,7 +175,7 @@ const Hero = () => {
                   transition={{
                     duration: 3,
                     repeat: Infinity,
-                    ease: "linear"
+                    ease: "linear",
                   }}
                 >
                   <Sparkles size={20} />
@@ -175,15 +192,30 @@ const Hero = () => {
             className="flex justify-center space-x-6"
           >
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub", color: "from-blue-500 to-blue-600" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "from-purple-500 to-purple-600" },
-              { icon: Mail, href: "mailto:your.email@example.com", label: "Email", color: "from-pink-500 to-pink-600" }
+              {
+                icon: Github,
+                href: urls.github,
+                label: "GitHub",
+                color: "from-blue-500 to-blue-600",
+              },
+              {
+                icon: Linkedin,
+                href: urls.linkedin,
+                label: "LinkedIn",
+                color: "from-purple-500 to-purple-600",
+              },
+              {
+                icon: Mail,
+                href: urls.email,
+                label: "Email",
+                color: "from-pink-500 to-pink-600",
+              },
             ].map(({ icon: Icon, href, label, color }) => (
               <motion.a
                 key={label}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.1,
-                  transition: { duration: 0.2 }
+                  transition: { duration: 0.2 },
                 }}
                 whileTap={{ scale: 0.95 }}
                 href={href}
