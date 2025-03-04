@@ -50,7 +50,7 @@ export const projectsData: { professional: Project[]; personal: Project[] } = {
       features: [
         "Implemented full process for users to connect with brands",
         "Developed feature to help users find territories of their chosen brands",
-        "Designed the database schema and integrated it with Prisma",
+        "Designed the database schema with Prisma",
         "Implemented GraphQL resolvers for multiple functionalities",
         "Built admin pages to display and manage data",
         "Contributed to multiple pages across the platform",

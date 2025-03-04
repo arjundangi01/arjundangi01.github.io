@@ -28,7 +28,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   techStack,
   features,
-  responsibility,
   githubUrl,
   previewUrl,
   index,
@@ -97,7 +96,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           >
             <p className="text-gray-300 mb-4">{description}</p>
             <div className="space-y-4">
-              <h4 className="text-white font-semibold">Key Features:</h4>
+              <h4 className="text-white font-semibold">Features Worked on</h4>
               <ul className="space-y-2">
                 {features.map((feature, idx) => (
                   <li key={idx} className="flex items-center text-gray-400">
