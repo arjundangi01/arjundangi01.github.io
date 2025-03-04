@@ -151,7 +151,7 @@ export const projectsData: { professional: Project[]; personal: Project[] } = {
       responsibility:
         "Independently Managed all aspects of the backend. In frontend, I contributed to the creation of the  tour detail page, navbar, profile page having user booking history, and login signup page",
       githubUrl: "https://github.com/arjundangi01/Travelious",
-      previewUrl: "https://travelious-project.netlify.app/",
+      previewUrl: "",
     },
     {
       title: "Auction Website",
@@ -186,7 +186,7 @@ export const projectsData: { professional: Project[]; personal: Project[] } = {
       responsibility:
         "Independently created: Managed all aspects of the project",
       githubUrl: "https://github.com/arjundangi01/Auction-Website",
-      previewUrl: "https://subtle-cupcake-2e83a9.netlify.app/",
+      previewUrl: "",
     },
     {
       title: "Medium Clone",
@@ -223,7 +223,7 @@ export const projectsData: { professional: Project[]; personal: Project[] } = {
       responsibility:
         "Independently created: Managed all aspects of the project",
       githubUrl: "https://github.com/arjundangi01/Medium-clone",
-      previewUrl: "https://comforting-taffy-d07f72.netlify.app/",
+      previewUrl: "",
     },
   ],
 };
