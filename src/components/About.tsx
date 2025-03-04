@@ -16,8 +16,7 @@ const About = () => {
       icon: Briefcase,
       title: "Full Stack Developer at Byldd",
       date: "January 2024 - Present",
-      description:
-        "Building scalable web applications using modern technologies.",
+      description: "Building scalable applications using modern technologies.",
     },
     {
       icon: GraduationCap,
