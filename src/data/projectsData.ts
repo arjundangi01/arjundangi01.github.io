@@ -27,6 +27,38 @@ interface Project {
 export const projectsData: { professional: Project[]; personal: Project[] } = {
   professional: [
     {
+      title: "Contra Padel",
+      subTitle: "Contra Padel: Sports Matchmaking App",
+      desktopImage: getImageUrl({
+        projectName: "Contra Padel",
+        formate: "desktop",
+      }),
+      mobileImage: getImageUrl({
+        projectName: "Contra Padel",
+        formate: "mobile",
+      }),
+      description:
+        "Developed a sports matchmaking app where club users create match slots, and players book matches based on preferences. Implemented automated player performance tracking using Bluetooth device data.",
+      techStack: [
+        "Next.js",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Prisma",
+        "Tailwind",
+      ],
+      features: [
+        "Built a match creation system for club users",
+        "Developed an automated matching system based on player preferences",
+        "Implemented recurring matches functionality",
+        "Optimized queries to fetch historical player performance data",
+        "Designed player stats tracking with Bluetooth device integration",
+      ],
+      responsibility: "",
+      githubUrl: "",
+      previewUrl: "",
+    },
+    {
       title: "Franzy",
       subTitle: "Franzy: Franchise Discovery and Investment Platform",
       desktopImage: getImageUrl({
@@ -57,7 +89,7 @@ export const projectsData: { professional: Project[]; personal: Project[] } = {
       ],
       responsibility: "",
       githubUrl: "",
-      previewUrl: "",
+      previewUrl: "https://franzy.com/",
     },
     {
       title: "Decimal",
@@ -89,7 +121,7 @@ export const projectsData: { professional: Project[]; personal: Project[] } = {
       ],
       responsibility: "",
       githubUrl: "",
-      previewUrl: "",
+      previewUrl: "https://app.decimal-app.com",
     },
 
     {
